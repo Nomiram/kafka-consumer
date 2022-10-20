@@ -8,7 +8,7 @@ RUN go mod download && go mod verify
 
 COPY . .
 RUN mkdir /go/bin/app
-WORKDIR /go/bin/app
+# WORKDIR /go/bin/app
 ENV GOPATH /go/bin/app
 RUN CGO_ENABLED=1 GOOS=linux go build -ldflags="-s -w" -o /go/bin/app -v ./...
 
