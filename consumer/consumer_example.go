@@ -12,15 +12,16 @@ import (
 var Cons = make(chan struct{})
 
 func Consumer() {
-	fmt.Println("test")
+	fmt.Println("msg from Consumer")
 
 	// to consume messages
-	topic := "my-topic"
+	topic := "my-topic-1"
 	partition := 0
 
 	conn, err := kafka.DialLeader(context.Background(), "tcp", "kafka:9092", topic, partition)
 	if err != nil {
-		log.Fatal("failed to dial leader:", err)
+		// Cons <- struct{}{}
+		log.Fatal("Comsumer: failed to dial leader:", err)
 	}
 
 	conn.SetReadDeadline(time.Now().Add(10 * time.Second))
@@ -36,12 +37,12 @@ func Consumer() {
 	}
 
 	if err := batch.Close(); err != nil {
-		Cons <- struct{}{}
+		// Cons <- struct{}{}
 		log.Fatal("failed to close batch:", err)
 	}
 
 	if err := conn.Close(); err != nil {
-		Cons <- struct{}{}
+		// Cons <- struct{}{}
 		log.Fatal("failed to close connection:", err)
 	}
 

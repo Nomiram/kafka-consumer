@@ -8,8 +8,9 @@ import (
 
 func main() {
 	fmt.Println("test")
-	go consumer.Consumer()
 	go producer.Producer()
+	<-producer.Sync
+	go consumer.Consumer()
 	<-consumer.Cons
 	fmt.Println("done")
 }
