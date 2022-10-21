@@ -1,0 +1,1 @@
+docker-compose logs > log.txt; gc log.txt | ? { $_ -match "kafka-test-kafka-consumer-1" }
