@@ -1,0 +1,955 @@
+kafka-test-kafka-1  | waiting for kafka to be ready
+kafka-test-kafka-1  | [Configuring] 'port' in '/opt/kafka/config/server.properties'
+kafka-test-kafka-1  | [Configuring] 'advertised.host.name' in '/opt/kafka/config/server.properties'
+kafka-test-kafka-1  | Excluding KAFKA_HOME from broker config
+kafka-test-kafka-1  | [Configuring] 'log.dirs' in '/opt/kafka/config/server.properties'
+kafka-test-kafka-1  | Excluding KAFKA_VERSION from broker config
+kafka-test-kafka-1  | [Configuring] 'advertised.port' in '/opt/kafka/config/server.properties'
+kafka-test-kafka-1  | [Configuring] 'zookeeper.connect' in '/opt/kafka/config/server.properties'
+kafka-test-kafka-1  | [Configuring] 'offsets.topic.replication.factor' in '/opt/kafka/config/server.properties'
+kafka-test-kafka-1  | [Configuring] 'broker.id' in '/opt/kafka/config/server.properties'
+kafka-test-kafka-1  | [2022-10-21 22:24:26,062] INFO Registered kafka:type=kafka.Log4jController MBean (kafka.utils.Log4jControllerRegistration$)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,469] INFO Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation (org.apache.zookeeper.common.X509Util)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,598] INFO Registered signal handlers for TERM, INT, HUP (org.apache.kafka.common.utils.LoggingSignalHandler)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,603] INFO starting (kafka.server.KafkaServer)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,603] INFO Connecting to zookeeper on zookeeper:2181 (kafka.server.KafkaServer)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,627] INFO [ZooKeeperClient Kafka server] Initializing a new session to zookeeper:2181. (kafka.zookeeper.ZooKeeperClient)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,634] INFO Client environment:zookeeper.version=3.5.9-83df9301aa5c2a5d284a9940177808c01bc35cef, built on 01/06/2021 20:03 GMT (org.apache.zookeeper.ZooKeeper)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,634] INFO Client environment:host.name=33e51df08e62 (org.apache.zookeeper.ZooKeeper)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,634] INFO Client environment:java.version=11.0.15 (org.apache.zookeeper.ZooKeeper)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,635] INFO Client environment:java.vendor=Oracle Corporation (org.apache.zookeeper.ZooKeeper)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,635] INFO Client environment:java.home=/usr/local/openjdk-11 (org.apache.zookeeper.ZooKeeper)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,635] INFO Client environment:java.class.path=/opt/kafka/bin/../libs/activation-1.1.1.jar:/opt/kafka/bin/../libs/aopalliance-repackaged-2.6.1.jar:/opt/kafka/bin/../libs/argparse4j-0.7.0.jar:/opt/kafka/bin/../libs/audience-annotations-0.5.0.jar:/opt/kafka/bin/../libs/commons-cli-1.4.jar:/opt/kafka/bin/../libs/commons-lang3-3.8.1.jar:/opt/kafka/bin/../libs/connect-api-2.8.1.jar:/opt/kafka/bin/../libs/connect-basic-auth-extension-2.8.1.jar:/opt/kafka/bin/../libs/connect-file-2.8.1.jar:/opt/kafka/bin/../libs/connect-json-2.8.1.jar:/opt/kafka/bin/../libs/connect-mirror-2.8.1.jar:/opt/kafka/bin/../libs/connect-mirror-client-2.8.1.jar:/opt/kafka/bin/../libs/connect-runtime-2.8.1.jar:/opt/kafka/bin/../libs/connect-transforms-2.8.1.jar:/opt/kafka/bin/../libs/hk2-api-2.6.1.jar:/opt/kafka/bin/../libs/hk2-locator-2.6.1.jar:/opt/kafka/bin/../libs/hk2-utils-2.6.1.jar:/opt/kafka/bin/../libs/jackson-annotations-2.10.5.jar:/opt/kafka/bin/../libs/jackson-core-2.10.5.jar:/opt/kafka/bin/../libs/jackson-databind-2.10.5.1.jar:/opt/kafka/bin/../libs/jackson-dataformat-csv-2.10.5.jar:/opt/kafka/bin/../libs/jackson-datatype-jdk8-2.10.5.jar:/opt/kafka/bin/../libs/jackson-jaxrs-base-2.10.5.jar:/opt/kafka/bin/../libs/jackson-jaxrs-json-provider-2.10.5.jar:/opt/kafka/bin/../libs/jackson-module-jaxb-annotations-2.10.5.jar:/opt/kafka/bin/../libs/jackson-module-paranamer-2.10.5.jar:/opt/kafka/bin/../libs/jackson-module-scala_2.13-2.10.5.jar:/opt/kafka/bin/../libs/jakarta.activation-api-1.2.1.jar:/opt/kafka/bin/../libs/jakarta.annotation-api-1.3.5.jar:/opt/kafka/bin/../libs/jakarta.inject-2.6.1.jar:/opt/kafka/bin/../libs/jakarta.validation-api-2.0.2.jar:/opt/kafka/bin/../libs/jakarta.ws.rs-api-2.1.6.jar:/opt/kafka/bin/../libs/jakarta.xml.bind-api-2.3.2.jar:/opt/kafka/bin/../libs/javassist-3.27.0-GA.jar:/opt/kafka/bin/../libs/javax.servlet-api-3.1.0.jar:/opt/kafka/bin/../libs/javax.ws.rs-api-2.1.1.jar:/opt/kafka/bin/../libs/jaxb-api-2.3.0.jar:/opt/kafka/bin/../libs/jersey-client-2.34.jar:/opt/kafka/bin/../libs/jersey-common-2.34.jar:/opt/kafka/bin/../libs/jersey-container-servlet-2.34.jar:/opt/kafka/bin/../libs/jersey-container-servlet-core-2.34.jar:/opt/kafka/bin/../libs/jersey-hk2-2.34.jar:/opt/kafka/bin/../libs/jersey-server-2.34.jar:/opt/kafka/bin/../libs/jetty-client-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-continuation-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-http-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-io-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-security-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-server-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-servlet-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-servlets-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-util-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jetty-util-ajax-9.4.43.v20210629.jar:/opt/kafka/bin/../libs/jline-3.12.1.jar:/opt/kafka/bin/../libs/jopt-simple-5.0.4.jar:/opt/kafka/bin/../libs/kafka-clients-2.8.1.jar:/opt/kafka/bin/../libs/kafka-log4j-appender-2.8.1.jar:/opt/kafka/bin/../libs/kafka-metadata-2.8.1.jar:/opt/kafka/bin/../libs/kafka-raft-2.8.1.jar:/opt/kafka/bin/../libs/kafka-shell-2.8.1.jar:/opt/kafka/bin/../libs/kafka-streams-2.8.1.jar:/opt/kafka/bin/../libs/kafka-streams-examples-2.8.1.jar:/opt/kafka/bin/../libs/kafka-streams-scala_2.13-2.8.1.jar:/opt/kafka/bin/../libs/kafka-streams-test-utils-2.8.1.jar:/opt/kafka/bin/../libs/kafka-tools-2.8.1.jar:/opt/kafka/bin/../libs/kafka_2.13-2.8.1-sources.jar:/opt/kafka/bin/../libs/kafka_2.13-2.8.1.jar:/opt/kafka/bin/../libs/log4j-1.2.17.jar:/opt/kafka/bin/../libs/lz4-java-1.7.1.jar:/opt/kafka/bin/../libs/maven-artifact-3.8.1.jar:/opt/kafka/bin/../libs/metrics-core-2.2.0.jar:/opt/kafka/bin/../libs/netty-buffer-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-codec-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-common-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-handler-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-resolver-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-transport-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-transport-native-epoll-4.1.62.Final.jar:/opt/kafka/bin/../libs/netty-transport-native-unix-common-4.1.62.Final.jar:/opt/kafka/bin/../libs/osgi-resource-locator-1.0.3.jar:/opt/kafka/bin/../libs/paranamer-2.8.jar:/opt/kafka/bin/../libs/plexus-utils-3.2.1.jar:/opt/kafka/bin/../libs/reflections-0.9.12.jar:/opt/kafka/bin/../libs/rocksdbjni-5.18.4.jar:/opt/kafka/bin/../libs/scala-collection-compat_2.13-2.3.0.jar:/opt/kafka/bin/../libs/scala-java8-compat_2.13-0.9.1.jar:/opt/kafka/bin/../libs/scala-library-2.13.5.jar:/opt/kafka/bin/../libs/scala-logging_2.13-3.9.2.jar:/opt/kafka/bin/../libs/scala-reflect-2.13.5.jar:/opt/kafka/bin/../libs/slf4j-api-1.7.30.jar:/opt/kafka/bin/../libs/slf4j-log4j12-1.7.30.jar:/opt/kafka/bin/../libs/snappy-java-1.1.8.1.jar:/opt/kafka/bin/../libs/zookeeper-3.5.9.jar:/opt/kafka/bin/../libs/zookeeper-jute-3.5.9.jar:/opt/kafka/bin/../libs/zstd-jni-1.4.9-1.jar (org.apache.zookeeper.ZooKeeper)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,635] INFO Client environment:java.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,635] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,635] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,635] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,635] INFO Client environment:os.arch=amd64 (org.apache.zookeeper.ZooKeeper)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,635] INFO Client environment:os.version=5.10.102.1-microsoft-standard-WSL2 (org.apache.zookeeper.ZooKeeper)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,636] INFO Client environment:user.name=root (org.apache.zookeeper.ZooKeeper)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,636] INFO Client environment:user.home=/root (org.apache.zookeeper.ZooKeeper)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,636] INFO Client environment:user.dir=/ (org.apache.zookeeper.ZooKeeper)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,636] INFO Client environment:os.memory.free=976MB (org.apache.zookeeper.ZooKeeper)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,636] INFO Client environment:os.memory.max=1024MB (org.apache.zookeeper.ZooKeeper)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,636] INFO Client environment:os.memory.total=1024MB (org.apache.zookeeper.ZooKeeper)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,639] INFO Initiating client connection, connectString=zookeeper:2181 sessionTimeout=18000 watcher=kafka.zookeeper.ZooKeeperClient$ZooKeeperClientWatcher$@205d38da (org.apache.zookeeper.ZooKeeper)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,646] INFO jute.maxbuffer value is 4194304 Bytes (org.apache.zookeeper.ClientCnxnSocket)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,653] INFO zookeeper.request.timeout value is 0. feature enabled= (org.apache.zookeeper.ClientCnxn)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,658] INFO [ZooKeeperClient Kafka server] Waiting until connected. (kafka.zookeeper.ZooKeeperClient)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,668] INFO Opening socket connection to server zookeeper/172.30.0.3:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,676] INFO Socket connection established, initiating session, client: /172.30.0.2:44836, server: zookeeper/172.30.0.3:2181 (org.apache.zookeeper.ClientCnxn)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,685] INFO Session establishment complete on server zookeeper/172.30.0.3:2181, sessionid = 0x100029ee06a001a, negotiated timeout = 18000 (org.apache.zookeeper.ClientCnxn)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,689] INFO [ZooKeeperClient Kafka server] Connected. (kafka.zookeeper.ZooKeeperClient)
+kafka-test-kafka-1  | [2022-10-21 22:24:26,844] INFO [feature-zk-node-event-process-thread]: Starting (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+kafka-test-kafka-1  | [2022-10-21 22:24:27,042] INFO Updated cache from existing <empty> to latest FinalizedFeaturesAndEpoch(features=Features{}, epoch=0). (kafka.server.FinalizedFeatureCache)
+kafka-test-kafka-1  | [2022-10-21 22:24:27,049] INFO Cluster ID = XgihhAqiTnmqNk4aGkWiaA (kafka.server.KafkaServer)
+kafka-test-kafka-1  | [2022-10-21 22:24:27,053] WARN No meta.properties file under dir /kafka/kafka-logs-33e51df08e62/meta.properties (kafka.server.BrokerMetadataCheckpoint)
+kafka-test-kafka-1  | [2022-10-21 22:24:27,123] INFO KafkaConfig values: 
+kafka-test-kafka-1  | 	advertised.host.name = localhost
+kafka-test-kafka-1  | 	advertised.listeners = null
+kafka-test-kafka-1  | 	advertised.port = 9092
+kafka-test-kafka-1  | 	alter.config.policy.class.name = null
+kafka-test-kafka-1  | 	alter.log.dirs.replication.quota.window.num = 11
+kafka-test-kafka-1  | 	alter.log.dirs.replication.quota.window.size.seconds = 1
+kafka-test-kafka-1  | 	authorizer.class.name = 
+kafka-test-kafka-1  | 	auto.create.topics.enable = true
+kafka-test-kafka-1  | 	auto.leader.rebalance.enable = true
+kafka-test-kafka-1  | 	background.threads = 10
+kafka-test-kafka-1  | 	broker.heartbeat.interval.ms = 2000
+kafka-test-kafka-1  | 	broker.id = -1
+kafka-test-kafka-1  | 	broker.id.generation.enable = true
+kafka-test-kafka-1  | 	broker.rack = null
+kafka-test-kafka-1  | 	broker.session.timeout.ms = 9000
+kafka-test-kafka-1  | 	client.quota.callback.class = null
+kafka-test-kafka-1  | 	compression.type = producer
+kafka-test-kafka-1  | 	connection.failed.authentication.delay.ms = 100
+kafka-test-kafka-1  | 	connections.max.idle.ms = 600000
+kafka-test-kafka-1  | 	connections.max.reauth.ms = 0
+kafka-test-kafka-1  | 	control.plane.listener.name = null
+kafka-test-kafka-1  | 	controlled.shutdown.enable = true
+kafka-test-kafka-1  | 	controlled.shutdown.max.retries = 3
+kafka-test-kafka-1  | 	controlled.shutdown.retry.backoff.ms = 5000
+kafka-test-kafka-1  | 	controller.listener.names = null
+kafka-test-kafka-1  | 	controller.quorum.append.linger.ms = 25
+kafka-test-kafka-1  | 	controller.quorum.election.backoff.max.ms = 1000
+kafka-test-kafka-1  | 	controller.quorum.election.timeout.ms = 1000
+kafka-test-kafka-1  | 	controller.quorum.fetch.timeout.ms = 2000
+kafka-test-kafka-1  | 	controller.quorum.request.timeout.ms = 2000
+kafka-test-kafka-1  | 	controller.quorum.retry.backoff.ms = 20
+kafka-test-kafka-1  | 	controller.quorum.voters = []
+kafka-test-kafka-1  | 	controller.quota.window.num = 11
+kafka-test-kafka-1  | 	controller.quota.window.size.seconds = 1
+kafka-test-kafka-1  | 	controller.socket.timeout.ms = 30000
+kafka-test-kafka-1  | 	create.topic.policy.class.name = null
+kafka-test-kafka-1  | 	default.replication.factor = 1
+kafka-test-kafka-1  | 	delegation.token.expiry.check.interval.ms = 3600000
+kafka-test-kafka-1  | 	delegation.token.expiry.time.ms = 86400000
+kafka-test-kafka-1  | 	delegation.token.master.key = null
+kafka-test-kafka-1  | 	delegation.token.max.lifetime.ms = 604800000
+kafka-test-kafka-1  | 	delegation.token.secret.key = null
+kafka-test-kafka-1  | 	delete.records.purgatory.purge.interval.requests = 1
+kafka-test-kafka-1  | 	delete.topic.enable = true
+kafka-test-kafka-1  | 	fetch.max.bytes = 57671680
+kafka-test-kafka-1  | 	fetch.purgatory.purge.interval.requests = 1000
+kafka-test-kafka-1  | 	group.initial.rebalance.delay.ms = 0
+kafka-test-kafka-1  | 	group.max.session.timeout.ms = 1800000
+kafka-test-kafka-1  | 	group.max.size = 2147483647
+kafka-test-kafka-1  | 	group.min.session.timeout.ms = 6000
+kafka-test-kafka-1  | 	host.name = 
+kafka-test-kafka-1  | 	initial.broker.registration.timeout.ms = 60000
+kafka-test-kafka-1  | 	inter.broker.listener.name = null
+kafka-test-kafka-1  | 	inter.broker.protocol.version = 2.8-IV1
+kafka-test-kafka-1  | 	kafka.metrics.polling.interval.secs = 10
+kafka-test-kafka-1  | 	kafka.metrics.reporters = []
+kafka-test-kafka-1  | 	leader.imbalance.check.interval.seconds = 300
+kafka-test-kafka-1  | 	leader.imbalance.per.broker.percentage = 10
+kafka-test-kafka-1  | 	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+kafka-test-kafka-1  | 	listeners = null
+kafka-test-kafka-1  | 	log.cleaner.backoff.ms = 15000
+kafka-test-kafka-1  | 	log.cleaner.dedupe.buffer.size = 134217728
+kafka-test-kafka-1  | 	log.cleaner.delete.retention.ms = 86400000
+kafka-test-kafka-1  | 	log.cleaner.enable = true
+kafka-test-kafka-1  | 	log.cleaner.io.buffer.load.factor = 0.9
+kafka-test-kafka-1  | 	log.cleaner.io.buffer.size = 524288
+kafka-test-kafka-1  | 	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+kafka-test-kafka-1  | 	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+kafka-test-kafka-1  | 	log.cleaner.min.cleanable.ratio = 0.5
+kafka-test-kafka-1  | 	log.cleaner.min.compaction.lag.ms = 0
+kafka-test-kafka-1  | 	log.cleaner.threads = 1
+kafka-test-kafka-1  | 	log.cleanup.policy = [delete]
+kafka-test-kafka-1  | 	log.dir = /tmp/kafka-logs
+kafka-test-kafka-1  | 	log.dirs = /kafka/kafka-logs-33e51df08e62
+kafka-test-kafka-1  | 	log.flush.interval.messages = 9223372036854775807
+kafka-test-kafka-1  | 	log.flush.interval.ms = null
+kafka-test-kafka-1  | 	log.flush.offset.checkpoint.interval.ms = 60000
+kafka-test-kafka-1  | 	log.flush.scheduler.interval.ms = 9223372036854775807
+kafka-test-kafka-1  | 	log.flush.start.offset.checkpoint.interval.ms = 60000
+kafka-test-kafka-1  | 	log.index.interval.bytes = 4096
+kafka-test-kafka-1  | 	log.index.size.max.bytes = 10485760
+kafka-test-kafka-1  | 	log.message.downconversion.enable = true
+kafka-test-kafka-1  | 	log.message.format.version = 2.8-IV1
+kafka-test-kafka-1  | 	log.message.timestamp.difference.max.ms = 9223372036854775807
+kafka-test-kafka-1  | 	log.message.timestamp.type = CreateTime
+kafka-test-kafka-1  | 	log.preallocate = false
+kafka-test-kafka-1  | 	log.retention.bytes = -1
+kafka-test-kafka-1  | 	log.retention.check.interval.ms = 300000
+kafka-test-kafka-1  | 	log.retention.hours = 168
+kafka-test-kafka-1  | 	log.retention.minutes = null
+kafka-test-kafka-1  | 	log.retention.ms = null
+kafka-test-kafka-1  | 	log.roll.hours = 168
+kafka-test-kafka-1  | 	log.roll.jitter.hours = 0
+kafka-test-kafka-1  | 	log.roll.jitter.ms = null
+kafka-test-kafka-1  | 	log.roll.ms = null
+kafka-test-kafka-1  | 	log.segment.bytes = 1073741824
+kafka-test-kafka-1  | 	log.segment.delete.delay.ms = 60000
+kafka-test-kafka-1  | 	max.connection.creation.rate = 2147483647
+kafka-test-kafka-1  | 	max.connections = 2147483647
+kafka-test-kafka-1  | 	max.connections.per.ip = 2147483647
+kafka-test-kafka-1  | 	max.connections.per.ip.overrides = 
+kafka-test-kafka-1  | 	max.incremental.fetch.session.cache.slots = 1000
+kafka-test-kafka-1  | 	message.max.bytes = 1048588
+kafka-test-kafka-1  | 	metadata.log.dir = null
+kafka-test-kafka-1  | 	metric.reporters = []
+kafka-test-kafka-1  | 	metrics.num.samples = 2
+kafka-test-kafka-1  | 	metrics.recording.level = INFO
+kafka-test-kafka-1  | 	metrics.sample.window.ms = 30000
+kafka-test-kafka-1  | 	min.insync.replicas = 1
+kafka-test-kafka-1  | 	node.id = -1
+kafka-test-kafka-1  | 	num.io.threads = 8
+kafka-test-kafka-1  | 	num.network.threads = 3
+kafka-test-kafka-1  | 	num.partitions = 1
+kafka-test-kafka-1  | 	num.recovery.threads.per.data.dir = 1
+kafka-test-kafka-1  | 	num.replica.alter.log.dirs.threads = null
+kafka-test-kafka-1  | 	num.replica.fetchers = 1
+kafka-test-kafka-1  | 	offset.metadata.max.bytes = 4096
+kafka-test-kafka-1  | 	offsets.commit.required.acks = -1
+kafka-test-kafka-1  | 	offsets.commit.timeout.ms = 5000
+kafka-test-kafka-1  | 	offsets.load.buffer.size = 5242880
+kafka-test-kafka-1  | 	offsets.retention.check.interval.ms = 600000
+kafka-test-kafka-1  | 	offsets.retention.minutes = 10080
+kafka-test-kafka-1  | 	offsets.topic.compression.codec = 0
+kafka-test-kafka-1  | 	offsets.topic.num.partitions = 50
+kafka-test-kafka-1  | 	offsets.topic.replication.factor = 1
+kafka-test-kafka-1  | 	offsets.topic.segment.bytes = 104857600
+kafka-test-kafka-1  | 	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+kafka-test-kafka-1  | 	password.encoder.iterations = 4096
+kafka-test-kafka-1  | 	password.encoder.key.length = 128
+kafka-test-kafka-1  | 	password.encoder.keyfactory.algorithm = null
+kafka-test-kafka-1  | 	password.encoder.old.secret = null
+kafka-test-kafka-1  | 	password.encoder.secret = null
+kafka-test-kafka-1  | 	port = 9092
+kafka-test-kafka-1  | 	principal.builder.class = null
+kafka-test-kafka-1  | 	process.roles = []
+kafka-test-kafka-1  | 	producer.purgatory.purge.interval.requests = 1000
+kafka-test-kafka-1  | 	queued.max.request.bytes = -1
+kafka-test-kafka-1  | 	queued.max.requests = 500
+kafka-test-kafka-1  | 	quota.consumer.default = 9223372036854775807
+kafka-test-kafka-1  | 	quota.producer.default = 9223372036854775807
+kafka-test-kafka-1  | 	quota.window.num = 11
+kafka-test-kafka-1  | 	quota.window.size.seconds = 1
+kafka-test-kafka-1  | 	replica.fetch.backoff.ms = 1000
+kafka-test-kafka-1  | 	replica.fetch.max.bytes = 1048576
+kafka-test-kafka-1  | 	replica.fetch.min.bytes = 1
+kafka-test-kafka-1  | 	replica.fetch.response.max.bytes = 10485760
+kafka-test-kafka-1  | 	replica.fetch.wait.max.ms = 500
+kafka-test-kafka-1  | 	replica.high.watermark.checkpoint.interval.ms = 5000
+kafka-test-kafka-1  | 	replica.lag.time.max.ms = 30000
+kafka-test-kafka-1  | 	replica.selector.class = null
+kafka-test-kafka-1  | 	replica.socket.receive.buffer.bytes = 65536
+kafka-test-kafka-1  | 	replica.socket.timeout.ms = 30000
+kafka-test-kafka-1  | 	replication.quota.window.num = 11
+kafka-test-kafka-1  | 	replication.quota.window.size.seconds = 1
+kafka-test-kafka-1  | 	request.timeout.ms = 30000
+kafka-test-kafka-1  | 	reserved.broker.max.id = 1000
+kafka-test-kafka-1  | 	sasl.client.callback.handler.class = null
+kafka-test-kafka-1  | 	sasl.enabled.mechanisms = [GSSAPI]
+kafka-test-kafka-1  | 	sasl.jaas.config = null
+kafka-test-kafka-1  | 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+kafka-test-kafka-1  | 	sasl.kerberos.min.time.before.relogin = 60000
+kafka-test-kafka-1  | 	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+kafka-test-kafka-1  | 	sasl.kerberos.service.name = null
+kafka-test-kafka-1  | 	sasl.kerberos.ticket.renew.jitter = 0.05
+kafka-test-kafka-1  | 	sasl.kerberos.ticket.renew.window.factor = 0.8
+kafka-test-kafka-1  | 	sasl.login.callback.handler.class = null
+kafka-test-kafka-1  | 	sasl.login.class = null
+kafka-test-kafka-1  | 	sasl.login.refresh.buffer.seconds = 300
+kafka-test-kafka-1  | 	sasl.login.refresh.min.period.seconds = 60
+kafka-test-kafka-1  | 	sasl.login.refresh.window.factor = 0.8
+kafka-test-kafka-1  | 	sasl.login.refresh.window.jitter = 0.05
+kafka-test-kafka-1  | 	sasl.mechanism.controller.protocol = GSSAPI
+kafka-test-kafka-1  | 	sasl.mechanism.inter.broker.protocol = GSSAPI
+kafka-test-kafka-1  | 	sasl.server.callback.handler.class = null
+kafka-test-kafka-1  | 	security.inter.broker.protocol = PLAINTEXT
+kafka-test-kafka-1  | 	security.providers = null
+kafka-test-kafka-1  | 	socket.connection.setup.timeout.max.ms = 30000
+kafka-test-kafka-1  | 	socket.connection.setup.timeout.ms = 10000
+kafka-test-kafka-1  | 	socket.receive.buffer.bytes = 102400
+kafka-test-kafka-1  | 	socket.request.max.bytes = 104857600
+kafka-test-kafka-1  | 	socket.send.buffer.bytes = 102400
+kafka-test-kafka-1  | 	ssl.cipher.suites = []
+kafka-test-kafka-1  | 	ssl.client.auth = none
+kafka-test-kafka-1  | 	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+kafka-test-kafka-1  | 	ssl.endpoint.identification.algorithm = https
+kafka-test-kafka-1  | 	ssl.engine.factory.class = null
+kafka-test-kafka-1  | 	ssl.key.password = null
+kafka-test-kafka-1  | 	ssl.keymanager.algorithm = SunX509
+kafka-test-kafka-1  | 	ssl.keystore.certificate.chain = null
+kafka-test-kafka-1  | 	ssl.keystore.key = null
+kafka-test-kafka-1  | 	ssl.keystore.location = null
+kafka-test-kafka-1  | 	ssl.keystore.password = null
+kafka-test-kafka-1  | 	ssl.keystore.type = JKS
+kafka-test-kafka-1  | 	ssl.principal.mapping.rules = DEFAULT
+kafka-test-kafka-1  | 	ssl.protocol = TLSv1.3
+kafka-test-kafka-1  | 	ssl.provider = null
+kafka-test-kafka-1  | 	ssl.secure.random.implementation = null
+kafka-test-kafka-1  | 	ssl.trustmanager.algorithm = PKIX
+kafka-test-kafka-1  | 	ssl.truststore.certificates = null
+kafka-test-kafka-1  | 	ssl.truststore.location = null
+kafka-test-kafka-1  | 	ssl.truststore.password = null
+kafka-test-kafka-1  | 	ssl.truststore.type = JKS
+kafka-test-kafka-1  | 	transaction.abort.timed.out.transaction.cleanup.interval.ms = 10000
+kafka-test-kafka-1  | 	transaction.max.timeout.ms = 900000
+kafka-test-kafka-1  | 	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+kafka-test-kafka-1  | 	transaction.state.log.load.buffer.size = 5242880
+kafka-test-kafka-1  | 	transaction.state.log.min.isr = 1
+kafka-test-kafka-1  | 	transaction.state.log.num.partitions = 50
+kafka-test-kafka-1  | 	transaction.state.log.replication.factor = 1
+kafka-test-kafka-1  | 	transaction.state.log.segment.bytes = 104857600
+kafka-test-kafka-1  | 	transactional.id.expiration.ms = 604800000
+kafka-test-kafka-1  | 	unclean.leader.election.enable = false
+kafka-test-kafka-1  | 	zookeeper.clientCnxnSocket = null
+kafka-test-kafka-1  | 	zookeeper.connect = zookeeper:2181
+kafka-test-kafka-1  | 	zookeeper.connection.timeout.ms = 18000
+kafka-test-kafka-1  | 	zookeeper.max.in.flight.requests = 10
+kafka-test-kafka-1  | 	zookeeper.session.timeout.ms = 18000
+kafka-test-kafka-1  | 	zookeeper.set.acl = false
+kafka-test-kafka-1  | 	zookeeper.ssl.cipher.suites = null
+kafka-test-kafka-1  | 	zookeeper.ssl.client.enable = false
+kafka-test-kafka-1  | 	zookeeper.ssl.crl.enable = false
+kafka-test-kafka-1  | 	zookeeper.ssl.enabled.protocols = null
+kafka-test-kafka-1  | 	zookeeper.ssl.endpoint.identification.algorithm = HTTPS
+kafka-test-kafka-1  | 	zookeeper.ssl.keystore.location = null
+kafka-test-kafka-1  | 	zookeeper.ssl.keystore.password = null
+kafka-test-kafka-1  | 	zookeeper.ssl.keystore.type = null
+kafka-test-kafka-1  | 	zookeeper.ssl.ocsp.enable = false
+kafka-test-kafka-1  | 	zookeeper.ssl.protocol = TLSv1.2
+kafka-test-kafka-1  | 	zookeeper.ssl.truststore.location = null
+kafka-test-kafka-1  | 	zookeeper.ssl.truststore.password = null
+kafka-test-kafka-1  | 	zookeeper.ssl.truststore.type = null
+kafka-test-kafka-1  | 	zookeeper.sync.time.ms = 2000
+kafka-test-kafka-1  |  (kafka.server.KafkaConfig)
+kafka-test-kafka-1  | [2022-10-21 22:24:27,134] INFO KafkaConfig values: 
+kafka-test-kafka-1  | 	advertised.host.name = localhost
+kafka-test-kafka-1  | 	advertised.listeners = null
+kafka-test-kafka-1  | 	advertised.port = 9092
+kafka-test-kafka-1  | 	alter.config.policy.class.name = null
+kafka-test-kafka-1  | 	alter.log.dirs.replication.quota.window.num = 11
+kafka-test-kafka-1  | 	alter.log.dirs.replication.quota.window.size.seconds = 1
+kafka-test-kafka-1  | 	authorizer.class.name = 
+kafka-test-kafka-1  | 	auto.create.topics.enable = true
+kafka-test-kafka-1  | 	auto.leader.rebalance.enable = true
+kafka-test-kafka-1  | 	background.threads = 10
+kafka-test-kafka-1  | 	broker.heartbeat.interval.ms = 2000
+kafka-test-kafka-1  | 	broker.id = -1
+kafka-test-kafka-1  | 	broker.id.generation.enable = true
+kafka-test-kafka-1  | 	broker.rack = null
+kafka-test-kafka-1  | 	broker.session.timeout.ms = 9000
+kafka-test-kafka-1  | 	client.quota.callback.class = null
+kafka-test-kafka-1  | 	compression.type = producer
+kafka-test-kafka-1  | 	connection.failed.authentication.delay.ms = 100
+kafka-test-kafka-1  | 	connections.max.idle.ms = 600000
+kafka-test-kafka-1  | 	connections.max.reauth.ms = 0
+kafka-test-kafka-1  | 	control.plane.listener.name = null
+kafka-test-kafka-1  | 	controlled.shutdown.enable = true
+kafka-test-kafka-1  | 	controlled.shutdown.max.retries = 3
+kafka-test-kafka-1  | 	controlled.shutdown.retry.backoff.ms = 5000
+kafka-test-kafka-1  | 	controller.listener.names = null
+kafka-test-kafka-1  | 	controller.quorum.append.linger.ms = 25
+kafka-test-kafka-1  | 	controller.quorum.election.backoff.max.ms = 1000
+kafka-test-kafka-1  | 	controller.quorum.election.timeout.ms = 1000
+kafka-test-kafka-1  | 	controller.quorum.fetch.timeout.ms = 2000
+kafka-test-kafka-1  | 	controller.quorum.request.timeout.ms = 2000
+kafka-test-kafka-1  | 	controller.quorum.retry.backoff.ms = 20
+kafka-test-kafka-1  | 	controller.quorum.voters = []
+kafka-test-kafka-1  | 	controller.quota.window.num = 11
+kafka-test-kafka-1  | 	controller.quota.window.size.seconds = 1
+kafka-test-kafka-1  | 	controller.socket.timeout.ms = 30000
+kafka-test-kafka-1  | 	create.topic.policy.class.name = null
+kafka-test-kafka-1  | 	default.replication.factor = 1
+kafka-test-kafka-1  | 	delegation.token.expiry.check.interval.ms = 3600000
+kafka-test-kafka-1  | 	delegation.token.expiry.time.ms = 86400000
+kafka-test-kafka-1  | 	delegation.token.master.key = null
+kafka-test-kafka-1  | 	delegation.token.max.lifetime.ms = 604800000
+kafka-test-kafka-1  | 	delegation.token.secret.key = null
+kafka-test-kafka-1  | 	delete.records.purgatory.purge.interval.requests = 1
+kafka-test-kafka-1  | 	delete.topic.enable = true
+kafka-test-kafka-1  | 	fetch.max.bytes = 57671680
+kafka-test-kafka-1  | 	fetch.purgatory.purge.interval.requests = 1000
+kafka-test-kafka-1  | 	group.initial.rebalance.delay.ms = 0
+kafka-test-kafka-1  | 	group.max.session.timeout.ms = 1800000
+kafka-test-kafka-1  | 	group.max.size = 2147483647
+kafka-test-kafka-1  | 	group.min.session.timeout.ms = 6000
+kafka-test-kafka-1  | 	host.name = 
+kafka-test-kafka-1  | 	initial.broker.registration.timeout.ms = 60000
+kafka-test-kafka-1  | 	inter.broker.listener.name = null
+kafka-test-kafka-1  | 	inter.broker.protocol.version = 2.8-IV1
+kafka-test-kafka-1  | 	kafka.metrics.polling.interval.secs = 10
+kafka-test-kafka-1  | 	kafka.metrics.reporters = []
+kafka-test-kafka-1  | 	leader.imbalance.check.interval.seconds = 300
+kafka-test-kafka-1  | 	leader.imbalance.per.broker.percentage = 10
+kafka-test-kafka-1  | 	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+kafka-test-kafka-1  | 	listeners = null
+kafka-test-kafka-1  | 	log.cleaner.backoff.ms = 15000
+kafka-test-kafka-1  | 	log.cleaner.dedupe.buffer.size = 134217728
+kafka-test-kafka-1  | 	log.cleaner.delete.retention.ms = 86400000
+kafka-test-kafka-1  | 	log.cleaner.enable = true
+kafka-test-kafka-1  | 	log.cleaner.io.buffer.load.factor = 0.9
+kafka-test-kafka-1  | 	log.cleaner.io.buffer.size = 524288
+kafka-test-kafka-1  | 	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+kafka-test-kafka-1  | 	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+kafka-test-kafka-1  | 	log.cleaner.min.cleanable.ratio = 0.5
+kafka-test-kafka-1  | 	log.cleaner.min.compaction.lag.ms = 0
+kafka-test-kafka-1  | 	log.cleaner.threads = 1
+kafka-test-kafka-1  | 	log.cleanup.policy = [delete]
+kafka-test-kafka-1  | 	log.dir = /tmp/kafka-logs
+kafka-test-kafka-1  | 	log.dirs = /kafka/kafka-logs-33e51df08e62
+kafka-test-kafka-1  | 	log.flush.interval.messages = 9223372036854775807
+kafka-test-kafka-1  | 	log.flush.interval.ms = null
+kafka-test-kafka-1  | 	log.flush.offset.checkpoint.interval.ms = 60000
+kafka-test-kafka-1  | 	log.flush.scheduler.interval.ms = 9223372036854775807
+kafka-test-kafka-1  | 	log.flush.start.offset.checkpoint.interval.ms = 60000
+kafka-test-kafka-1  | 	log.index.interval.bytes = 4096
+kafka-test-kafka-1  | 	log.index.size.max.bytes = 10485760
+kafka-test-kafka-1  | 	log.message.downconversion.enable = true
+kafka-test-kafka-1  | 	log.message.format.version = 2.8-IV1
+kafka-test-kafka-1  | 	log.message.timestamp.difference.max.ms = 9223372036854775807
+kafka-test-kafka-1  | 	log.message.timestamp.type = CreateTime
+kafka-test-kafka-1  | 	log.preallocate = false
+kafka-test-kafka-1  | 	log.retention.bytes = -1
+kafka-test-kafka-1  | 	log.retention.check.interval.ms = 300000
+kafka-test-kafka-1  | 	log.retention.hours = 168
+kafka-test-kafka-1  | 	log.retention.minutes = null
+kafka-test-kafka-1  | 	log.retention.ms = null
+kafka-test-kafka-1  | 	log.roll.hours = 168
+kafka-test-kafka-1  | 	log.roll.jitter.hours = 0
+kafka-test-kafka-1  | 	log.roll.jitter.ms = null
+kafka-test-kafka-1  | 	log.roll.ms = null
+kafka-test-kafka-1  | 	log.segment.bytes = 1073741824
+kafka-test-kafka-1  | 	log.segment.delete.delay.ms = 60000
+kafka-test-kafka-1  | 	max.connection.creation.rate = 2147483647
+kafka-test-kafka-1  | 	max.connections = 2147483647
+kafka-test-kafka-1  | 	max.connections.per.ip = 2147483647
+kafka-test-kafka-1  | 	max.connections.per.ip.overrides = 
+kafka-test-kafka-1  | 	max.incremental.fetch.session.cache.slots = 1000
+kafka-test-kafka-1  | 	message.max.bytes = 1048588
+kafka-test-kafka-1  | 	metadata.log.dir = null
+kafka-test-kafka-1  | 	metric.reporters = []
+kafka-test-kafka-1  | 	metrics.num.samples = 2
+kafka-test-kafka-1  | 	metrics.recording.level = INFO
+kafka-test-kafka-1  | 	metrics.sample.window.ms = 30000
+kafka-test-kafka-1  | 	min.insync.replicas = 1
+kafka-test-kafka-1  | 	node.id = -1
+kafka-test-kafka-1  | 	num.io.threads = 8
+kafka-test-kafka-1  | 	num.network.threads = 3
+kafka-test-kafka-1  | 	num.partitions = 1
+kafka-test-kafka-1  | 	num.recovery.threads.per.data.dir = 1
+kafka-test-kafka-1  | 	num.replica.alter.log.dirs.threads = null
+kafka-test-kafka-1  | 	num.replica.fetchers = 1
+kafka-test-kafka-1  | 	offset.metadata.max.bytes = 4096
+kafka-test-kafka-1  | 	offsets.commit.required.acks = -1
+kafka-test-kafka-1  | 	offsets.commit.timeout.ms = 5000
+kafka-test-kafka-1  | 	offsets.load.buffer.size = 5242880
+kafka-test-kafka-1  | 	offsets.retention.check.interval.ms = 600000
+kafka-test-kafka-1  | 	offsets.retention.minutes = 10080
+kafka-test-kafka-1  | 	offsets.topic.compression.codec = 0
+kafka-test-kafka-1  | 	offsets.topic.num.partitions = 50
+kafka-test-kafka-1  | 	offsets.topic.replication.factor = 1
+kafka-test-kafka-1  | 	offsets.topic.segment.bytes = 104857600
+kafka-test-kafka-1  | 	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+kafka-test-kafka-1  | 	password.encoder.iterations = 4096
+kafka-test-kafka-1  | 	password.encoder.key.length = 128
+kafka-test-kafka-1  | 	password.encoder.keyfactory.algorithm = null
+kafka-test-kafka-1  | 	password.encoder.old.secret = null
+kafka-test-kafka-1  | 	password.encoder.secret = null
+kafka-test-kafka-1  | 	port = 9092
+kafka-test-kafka-1  | 	principal.builder.class = null
+kafka-test-kafka-1  | 	process.roles = []
+kafka-test-kafka-1  | 	producer.purgatory.purge.interval.requests = 1000
+kafka-test-kafka-1  | 	queued.max.request.bytes = -1
+kafka-test-kafka-1  | 	queued.max.requests = 500
+kafka-test-kafka-1  | 	quota.consumer.default = 9223372036854775807
+kafka-test-kafka-1  | 	quota.producer.default = 9223372036854775807
+kafka-test-kafka-1  | 	quota.window.num = 11
+kafka-test-kafka-1  | 	quota.window.size.seconds = 1
+kafka-test-kafka-1  | 	replica.fetch.backoff.ms = 1000
+kafka-test-kafka-1  | 	replica.fetch.max.bytes = 1048576
+kafka-test-kafka-1  | 	replica.fetch.min.bytes = 1
+kafka-test-kafka-1  | 	replica.fetch.response.max.bytes = 10485760
+kafka-test-kafka-1  | 	replica.fetch.wait.max.ms = 500
+kafka-test-kafka-1  | 	replica.high.watermark.checkpoint.interval.ms = 5000
+kafka-test-kafka-1  | 	replica.lag.time.max.ms = 30000
+kafka-test-kafka-1  | 	replica.selector.class = null
+kafka-test-kafka-1  | 	replica.socket.receive.buffer.bytes = 65536
+kafka-test-kafka-1  | 	replica.socket.timeout.ms = 30000
+kafka-test-kafka-1  | 	replication.quota.window.num = 11
+kafka-test-kafka-1  | 	replication.quota.window.size.seconds = 1
+kafka-test-kafka-1  | 	request.timeout.ms = 30000
+kafka-test-kafka-1  | 	reserved.broker.max.id = 1000
+kafka-test-kafka-1  | 	sasl.client.callback.handler.class = null
+kafka-test-kafka-1  | 	sasl.enabled.mechanisms = [GSSAPI]
+kafka-test-kafka-1  | 	sasl.jaas.config = null
+kafka-test-kafka-1  | 	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+kafka-test-kafka-1  | 	sasl.kerberos.min.time.before.relogin = 60000
+kafka-test-kafka-1  | 	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+kafka-test-kafka-1  | 	sasl.kerberos.service.name = null
+kafka-test-kafka-1  | 	sasl.kerberos.ticket.renew.jitter = 0.05
+kafka-test-kafka-1  | 	sasl.kerberos.ticket.renew.window.factor = 0.8
+kafka-test-kafka-1  | 	sasl.login.callback.handler.class = null
+kafka-test-kafka-1  | 	sasl.login.class = null
+kafka-test-kafka-1  | 	sasl.login.refresh.buffer.seconds = 300
+kafka-test-kafka-1  | 	sasl.login.refresh.min.period.seconds = 60
+kafka-test-kafka-1  | 	sasl.login.refresh.window.factor = 0.8
+kafka-test-kafka-1  | 	sasl.login.refresh.window.jitter = 0.05
+kafka-test-kafka-1  | 	sasl.mechanism.controller.protocol = GSSAPI
+kafka-test-kafka-1  | 	sasl.mechanism.inter.broker.protocol = GSSAPI
+kafka-test-kafka-1  | 	sasl.server.callback.handler.class = null
+kafka-test-kafka-1  | 	security.inter.broker.protocol = PLAINTEXT
+kafka-test-kafka-1  | 	security.providers = null
+kafka-test-kafka-1  | 	socket.connection.setup.timeout.max.ms = 30000
+kafka-test-kafka-1  | 	socket.connection.setup.timeout.ms = 10000
+kafka-test-kafka-1  | 	socket.receive.buffer.bytes = 102400
+kafka-test-kafka-1  | 	socket.request.max.bytes = 104857600
+kafka-test-kafka-1  | 	socket.send.buffer.bytes = 102400
+kafka-test-kafka-1  | 	ssl.cipher.suites = []
+kafka-test-kafka-1  | 	ssl.client.auth = none
+kafka-test-kafka-1  | 	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+kafka-test-kafka-1  | 	ssl.endpoint.identification.algorithm = https
+kafka-test-kafka-1  | 	ssl.engine.factory.class = null
+kafka-test-kafka-1  | 	ssl.key.password = null
+kafka-test-kafka-1  | 	ssl.keymanager.algorithm = SunX509
+kafka-test-kafka-1  | 	ssl.keystore.certificate.chain = null
+kafka-test-kafka-1  | 	ssl.keystore.key = null
+kafka-test-kafka-1  | 	ssl.keystore.location = null
+kafka-test-kafka-1  | 	ssl.keystore.password = null
+kafka-test-kafka-1  | 	ssl.keystore.type = JKS
+kafka-test-kafka-1  | 	ssl.principal.mapping.rules = DEFAULT
+kafka-test-kafka-1  | 	ssl.protocol = TLSv1.3
+kafka-test-kafka-1  | 	ssl.provider = null
+kafka-test-kafka-1  | 	ssl.secure.random.implementation = null
+kafka-test-kafka-1  | 	ssl.trustmanager.algorithm = PKIX
+kafka-test-kafka-1  | 	ssl.truststore.certificates = null
+kafka-test-kafka-1  | 	ssl.truststore.location = null
+kafka-test-kafka-1  | 	ssl.truststore.password = null
+kafka-test-kafka-1  | 	ssl.truststore.type = JKS
+kafka-test-kafka-1  | 	transaction.abort.timed.out.transaction.cleanup.interval.ms = 10000
+kafka-test-kafka-1  | 	transaction.max.timeout.ms = 900000
+kafka-test-kafka-1  | 	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+kafka-test-kafka-1  | 	transaction.state.log.load.buffer.size = 5242880
+kafka-test-kafka-1  | 	transaction.state.log.min.isr = 1
+kafka-test-kafka-1  | 	transaction.state.log.num.partitions = 50
+kafka-test-kafka-1  | 	transaction.state.log.replication.factor = 1
+kafka-test-kafka-1  | 	transaction.state.log.segment.bytes = 104857600
+kafka-test-kafka-1  | 	transactional.id.expiration.ms = 604800000
+kafka-test-kafka-1  | 	unclean.leader.election.enable = false
+kafka-test-kafka-1  | 	zookeeper.clientCnxnSocket = null
+kafka-test-kafka-1  | 	zookeeper.connect = zookeeper:2181
+kafka-test-kafka-1  | 	zookeeper.connection.timeout.ms = 18000
+kafka-test-kafka-1  | 	zookeeper.max.in.flight.requests = 10
+kafka-test-kafka-1  | 	zookeeper.session.timeout.ms = 18000
+kafka-test-kafka-1  | 	zookeeper.set.acl = false
+kafka-test-kafka-1  | 	zookeeper.ssl.cipher.suites = null
+kafka-test-kafka-1  | 	zookeeper.ssl.client.enable = false
+kafka-test-kafka-1  | 	zookeeper.ssl.crl.enable = false
+kafka-test-kafka-1  | 	zookeeper.ssl.enabled.protocols = null
+kafka-test-kafka-1  | 	zookeeper.ssl.endpoint.identification.algorithm = HTTPS
+kafka-test-kafka-1  | 	zookeeper.ssl.keystore.location = null
+kafka-test-kafka-1  | 	zookeeper.ssl.keystore.password = null
+kafka-test-kafka-1  | 	zookeeper.ssl.keystore.type = null
+kafka-test-kafka-1  | 	zookeeper.ssl.ocsp.enable = false
+kafka-test-kafka-1  | 	zookeeper.ssl.protocol = TLSv1.2
+kafka-test-kafka-1  | 	zookeeper.ssl.truststore.location = null
+kafka-test-kafka-1  | 	zookeeper.ssl.truststore.password = null
+kafka-test-kafka-1  | 	zookeeper.ssl.truststore.type = null
+kafka-test-kafka-1  | 	zookeeper.sync.time.ms = 2000
+kafka-test-kafka-1  |  (kafka.server.KafkaConfig)
+kafka-test-kafka-1  | [2022-10-21 22:24:27,189] INFO [ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+kafka-test-kafka-1  | [2022-10-21 22:24:27,191] INFO [ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+kafka-test-kafka-1  | [2022-10-21 22:24:27,193] INFO [ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+kafka-test-kafka-1  | [2022-10-21 22:24:27,197] INFO [ThrottledChannelReaper-ControllerMutation]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+kafka-test-kafka-1  | [2022-10-21 22:24:27,222] INFO Log directory /kafka/kafka-logs-33e51df08e62 not found, creating it. (kafka.log.LogManager)
+kafka-test-kafka-1  | [2022-10-21 22:24:27,280] INFO Loading logs from log dirs ArraySeq(/kafka/kafka-logs-33e51df08e62) (kafka.log.LogManager)
+kafka-test-kafka-1  | [2022-10-21 22:24:27,285] INFO Attempting recovery for all logs in /kafka/kafka-logs-33e51df08e62 since no clean shutdown file was found (kafka.log.LogManager)
+kafka-test-kafka-1  | [2022-10-21 22:24:27,293] INFO Loaded 0 logs in 12ms. (kafka.log.LogManager)
+kafka-test-kafka-1  | [2022-10-21 22:24:27,293] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+kafka-test-kafka-1  | [2022-10-21 22:24:27,297] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,070] INFO Updated connection-accept-rate max connection creation rate to 2147483647 (kafka.network.ConnectionQuotas)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,076] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.Acceptor)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,143] INFO [SocketServer listenerType=ZK_BROKER, nodeId=1002] Created data-plane acceptor and processors for endpoint : ListenerName(PLAINTEXT) (kafka.network.SocketServer)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,209] INFO [broker-1002-to-controller-send-thread]: Starting (kafka.server.BrokerToControllerRequestThread)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,242] INFO [ExpirationReaper-1002-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,244] INFO [ExpirationReaper-1002-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,246] INFO [ExpirationReaper-1002-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,247] INFO [ExpirationReaper-1002-ElectLeader]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,273] INFO [LogDirFailureHandler]: Starting (kafka.server.ReplicaManager$LogDirFailureHandler)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,351] INFO Creating /brokers/ids/1002 (is it secure? false) (kafka.zk.KafkaZkClient)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,378] INFO Stat of the created znode at /brokers/ids/1002 is: 106,106,1666391068367,1666391068367,1,0,0,72060475431059482,202,0,106
+kafka-test-kafka-1  |  (kafka.zk.KafkaZkClient)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,383] INFO Registered broker 1002 at path /brokers/ids/1002 with addresses: PLAINTEXT://localhost:9092, czxid (broker epoch): 106 (kafka.zk.KafkaZkClient)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,556] INFO [ExpirationReaper-1002-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,569] INFO [ExpirationReaper-1002-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,573] INFO [ExpirationReaper-1002-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,598] INFO [GroupCoordinator 1002]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,605] INFO [GroupCoordinator 1002]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,654] INFO [ProducerId Manager 1002]: Acquired new producerId block (brokerId:1002,blockStartProducerId:1000,blockEndProducerId:1999) by writing to Zk with path version 2 (kafka.coordinator.transaction.ProducerIdManager)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,655] INFO [TransactionCoordinator id=1002] Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,661] INFO [TransactionCoordinator id=1002] Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,662] INFO [Transaction Marker Channel Manager 1002]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,715] INFO [ExpirationReaper-1002-AlterAcls]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,802] INFO [/config/changes-event-process-thread]: Starting (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,850] INFO [SocketServer listenerType=ZK_BROKER, nodeId=1002] Starting socket server acceptors and processors (kafka.network.SocketServer)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,894] INFO [SocketServer listenerType=ZK_BROKER, nodeId=1002] Started data-plane acceptor and processor(s) for endpoint : ListenerName(PLAINTEXT) (kafka.network.SocketServer)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,894] INFO [SocketServer listenerType=ZK_BROKER, nodeId=1002] Started socket server acceptors and processors (kafka.network.SocketServer)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,910] INFO Kafka version: 2.8.1 (org.apache.kafka.common.utils.AppInfoParser)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,913] INFO Kafka commitId: 839b886f9b732b15 (org.apache.kafka.common.utils.AppInfoParser)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,922] INFO Kafka startTimeMs: 1666391068894 (org.apache.kafka.common.utils.AppInfoParser)
+kafka-test-kafka-1  | [2022-10-21 22:24:28,924] INFO [KafkaServer id=1002] started (kafka.server.KafkaServer)
+kafka-test-kafka-1  | [2022-10-21 22:24:29,048] INFO [broker-1002-to-controller-send-thread]: Recorded new controller, from now on will use broker localhost:9092 (id: 1002 rack: null) (kafka.server.BrokerToControllerRequestThread)
+kafka-test-kafka-1  | creating topics: test:1:1
+kafka-test-kafka-consumer-1  | test
+kafka-test-kafka-consumer-1  | msg from Producer
+kafka-test-kafka-consumer-1  | 2022/10/21 22:24:43 failed to write messages:Kafka write errors (3/3), errors: [kafka.(*Client).Produce: fetch request error: topic partition has no leader (topic="test" partition=0) kafka.(*Client).Produce: fetch request error: topic partition has no leader (topic="test" partition=0) kafka.(*Client).Produce: fetch request error: topic partition has no leader (topic="test" partition=0)]
+kafka-test-kafka-consumer-1  | test
+kafka-test-kafka-consumer-1  | msg from Producer
+kafka-test-kafka-consumer-1  | 2022/10/21 22:33:41 failed to write messages:Kafka write errors (3/3), errors: [kafka.(*Client).Produce: fetch request error: topic partition has no leader (topic="test" partition=0) kafka.(*Client).Produce: fetch request error: topic partition has no leader (topic="test" partition=0) kafka.(*Client).Produce: fetch request error: topic partition has no leader (topic="test" partition=0)]
+kafka-test-zookeeper-1       | ZooKeeper JMX enabled by default
+kafka-test-zookeeper-1       | Using config: /opt/zookeeper-3.4.13/bin/../conf/zoo.cfg
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,369 [myid:] - INFO  [main:QuorumPeerConfig@136] - Reading configuration from: /opt/zookeeper-3.4.13/bin/../conf/zoo.cfg
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,381 [myid:] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,382 [myid:] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 1
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,384 [myid:] - WARN  [main:QuorumPeerMain@116] - Either no config or no quorum defined in config, running  in standalone mode
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,385 [myid:] - INFO  [PurgeTask:DatadirCleanupManager$PurgeTask@138] - Purge task started.
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,427 [myid:] - INFO  [main:QuorumPeerConfig@136] - Reading configuration from: /opt/zookeeper-3.4.13/bin/../conf/zoo.cfg
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,430 [myid:] - INFO  [main:ZooKeeperServerMain@98] - Starting server
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,442 [myid:] - INFO  [PurgeTask:DatadirCleanupManager$PurgeTask@144] - Purge task completed.
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,455 [myid:] - INFO  [main:Environment@100] - Server environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 04:05 GMT
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,455 [myid:] - INFO  [main:Environment@100] - Server environment:host.name=73aa293e1cea
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,455 [myid:] - INFO  [main:Environment@100] - Server environment:java.version=1.7.0_65
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,455 [myid:] - INFO  [main:Environment@100] - Server environment:java.vendor=Oracle Corporation
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,456 [myid:] - INFO  [main:Environment@100] - Server environment:java.home=/usr/lib/jvm/java-7-openjdk-amd64/jre
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,456 [myid:] - INFO  [main:Environment@100] - Server environment:java.class.path=/opt/zookeeper-3.4.13/bin/../build/classes:/opt/zookeeper-3.4.13/bin/../build/lib/*.jar:/opt/zookeeper-3.4.13/bin/../lib/slf4j-log4j12-1.7.25.jar:/opt/zookeeper-3.4.13/bin/../lib/slf4j-api-1.7.25.jar:/opt/zookeeper-3.4.13/bin/../lib/netty-3.10.6.Final.jar:/opt/zookeeper-3.4.13/bin/../lib/log4j-1.2.17.jar:/opt/zookeeper-3.4.13/bin/../lib/jline-0.9.94.jar:/opt/zookeeper-3.4.13/bin/../lib/audience-annotations-0.5.0.jar:/opt/zookeeper-3.4.13/bin/../zookeeper-3.4.13.jar:/opt/zookeeper-3.4.13/bin/../src/java/lib/*.jar:/opt/zookeeper-3.4.13/bin/../conf:
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,456 [myid:] - INFO  [main:Environment@100] - Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,457 [myid:] - INFO  [main:Environment@100] - Server environment:java.io.tmpdir=/tmp
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,461 [myid:] - INFO  [main:Environment@100] - Server environment:java.compiler=<NA>
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,461 [myid:] - INFO  [main:Environment@100] - Server environment:os.name=Linux
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,462 [myid:] - INFO  [main:Environment@100] - Server environment:os.arch=amd64
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,462 [myid:] - INFO  [main:Environment@100] - Server environment:os.version=5.10.102.1-microsoft-standard-WSL2
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,462 [myid:] - INFO  [main:Environment@100] - Server environment:user.name=root
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,463 [myid:] - INFO  [main:Environment@100] - Server environment:user.home=/root
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,463 [myid:] - INFO  [main:Environment@100] - Server environment:user.dir=/opt/zookeeper-3.4.13
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,469 [myid:] - INFO  [main:ZooKeeperServer@836] - tickTime set to 2000
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,470 [myid:] - INFO  [main:ZooKeeperServer@845] - minSessionTimeout set to -1
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,470 [myid:] - INFO  [main:ZooKeeperServer@854] - maxSessionTimeout set to -1
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,495 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+kafka-test-zookeeper-1       | 2022-10-21 22:12:12,511 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:2181
+kafka-test-zookeeper-1       | 2022-10-21 22:12:13,553 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44690
+kafka-test-zookeeper-1       | 2022-10-21 22:12:13,560 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44690
+kafka-test-zookeeper-1       | 2022-10-21 22:12:13,564 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.1
+kafka-test-zookeeper-1       | 2022-10-21 22:12:13,581 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0000 with negotiated timeout 18000 for client /172.30.0.2:44690
+kafka-test-zookeeper-1       | 2022-10-21 22:12:13,665 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@653] - Got user-level KeeperException when processing sessionid:0x100029ee06a0000 type:create cxid:0x2 zxid:0x3 txntype:-1 reqpath:n/a Error Path:/brokers Error:KeeperErrorCode = NoNode for /brokers
+kafka-test-zookeeper-1       | 2022-10-21 22:12:13,679 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@653] - Got user-level KeeperException when processing sessionid:0x100029ee06a0000 type:create cxid:0x6 zxid:0x7 txntype:-1 reqpath:n/a Error Path:/config Error:KeeperErrorCode = NoNode for /config
+kafka-test-zookeeper-1       | 2022-10-21 22:12:13,690 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@653] - Got user-level KeeperException when processing sessionid:0x100029ee06a0000 type:create cxid:0x9 zxid:0xa txntype:-1 reqpath:n/a Error Path:/admin Error:KeeperErrorCode = NoNode for /admin
+kafka-test-zookeeper-1       | 2022-10-21 22:12:13,932 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@653] - Got user-level KeeperException when processing sessionid:0x100029ee06a0000 type:create cxid:0x18 zxid:0x16 txntype:-1 reqpath:n/a Error Path:/cluster Error:KeeperErrorCode = NoNode for /cluster
+kafka-test-zookeeper-1       | 2022-10-21 22:12:15,729 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@596] - Got user-level KeeperException when processing sessionid:0x100029ee06a0000 type:multi cxid:0x40 zxid:0x1f txntype:-1 reqpath:n/a aborting remaining multi ops. Error Path:/admin/preferred_replica_election Error:KeeperErrorCode = NoNode for /admin/preferred_replica_election
+kafka-test-zookeeper-1       | 2022-10-21 22:12:22,997 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44694
+kafka-test-zookeeper-1       | 2022-10-21 22:12:23,001 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44694
+kafka-test-zookeeper-1       | 2022-10-21 22:12:23,004 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0001 with negotiated timeout 30000 for client /172.30.0.2:44694
+kafka-test-zookeeper-1       | 2022-10-21 22:12:23,327 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@653] - Got user-level KeeperException when processing sessionid:0x100029ee06a0001 type:setData cxid:0x4 zxid:0x21 txntype:-1 reqpath:n/a Error Path:/config/topics/test Error:KeeperErrorCode = NoNode for /config/topics/test
+kafka-test-zookeeper-1       | 2022-10-21 22:12:23,386 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0001
+kafka-test-zookeeper-1       | 2022-10-21 22:12:23,389 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44694 which had sessionid 0x100029ee06a0001
+kafka-test-zookeeper-1       | 2022-10-21 22:12:28,188 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44696
+kafka-test-zookeeper-1       | 2022-10-21 22:12:28,194 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44696
+kafka-test-zookeeper-1       | 2022-10-21 22:12:28,196 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0002 with negotiated timeout 30000 for client /172.30.0.2:44696
+kafka-test-zookeeper-1       | 2022-10-21 22:12:28,245 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0002
+kafka-test-zookeeper-1       | 2022-10-21 22:12:28,248 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44696 which had sessionid 0x100029ee06a0002
+kafka-test-zookeeper-1       | 2022-10-21 22:12:45,698 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44720
+kafka-test-zookeeper-1       | 2022-10-21 22:12:45,703 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44720
+kafka-test-zookeeper-1       | 2022-10-21 22:12:45,705 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0003 with negotiated timeout 30000 for client /172.30.0.2:44720
+kafka-test-zookeeper-1       | 2022-10-21 22:12:45,754 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0003
+kafka-test-zookeeper-1       | 2022-10-21 22:12:45,756 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44720 which had sessionid 0x100029ee06a0003
+kafka-test-zookeeper-1       | 2022-10-21 22:13:02,971 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44722
+kafka-test-zookeeper-1       | 2022-10-21 22:13:02,979 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44722
+kafka-test-zookeeper-1       | 2022-10-21 22:13:02,982 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0004 with negotiated timeout 30000 for client /172.30.0.2:44722
+kafka-test-zookeeper-1       | 2022-10-21 22:13:03,031 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0004
+kafka-test-zookeeper-1       | 2022-10-21 22:13:03,034 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44722 which had sessionid 0x100029ee06a0004
+kafka-test-zookeeper-1       | 2022-10-21 22:13:20,375 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44748
+kafka-test-zookeeper-1       | 2022-10-21 22:13:20,379 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44748
+kafka-test-zookeeper-1       | 2022-10-21 22:13:20,394 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0005 with negotiated timeout 30000 for client /172.30.0.2:44748
+kafka-test-zookeeper-1       | 2022-10-21 22:13:20,481 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0005
+kafka-test-zookeeper-1       | 2022-10-21 22:13:20,484 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44748 which had sessionid 0x100029ee06a0005
+kafka-test-zookeeper-1       | 2022-10-21 22:13:37,698 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44752
+kafka-test-zookeeper-1       | 2022-10-21 22:13:37,704 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44752
+kafka-test-zookeeper-1       | 2022-10-21 22:13:37,707 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0006 with negotiated timeout 30000 for client /172.30.0.2:44752
+kafka-test-zookeeper-1       | 2022-10-21 22:13:37,759 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0006
+kafka-test-zookeeper-1       | 2022-10-21 22:13:37,762 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44752 which had sessionid 0x100029ee06a0006
+kafka-test-zookeeper-1       | 2022-10-21 22:13:55,018 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44754
+kafka-test-zookeeper-1       | 2022-10-21 22:13:55,023 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44754
+kafka-test-zookeeper-1       | 2022-10-21 22:13:55,026 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0007 with negotiated timeout 30000 for client /172.30.0.2:44754
+kafka-test-zookeeper-1       | 2022-10-21 22:13:55,071 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0007
+kafka-test-zookeeper-1       | 2022-10-21 22:13:55,073 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44754 which had sessionid 0x100029ee06a0007
+kafka-test-zookeeper-1       | 2022-10-21 22:14:12,210 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44756
+kafka-test-zookeeper-1       | 2022-10-21 22:14:12,214 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44756
+kafka-test-zookeeper-1       | 2022-10-21 22:14:12,229 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0008 with negotiated timeout 30000 for client /172.30.0.2:44756
+kafka-test-zookeeper-1       | 2022-10-21 22:14:12,282 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0008
+kafka-test-zookeeper-1       | 2022-10-21 22:14:12,285 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44756 which had sessionid 0x100029ee06a0008
+kafka-test-zookeeper-1       | 2022-10-21 22:14:29,672 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44758
+kafka-test-zookeeper-1       | 2022-10-21 22:14:29,676 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44758
+kafka-test-zookeeper-1       | 2022-10-21 22:14:29,693 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0009 with negotiated timeout 30000 for client /172.30.0.2:44758
+kafka-test-zookeeper-1       | 2022-10-21 22:14:29,752 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0009
+kafka-test-zookeeper-1       | 2022-10-21 22:14:29,755 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44758 which had sessionid 0x100029ee06a0009
+kafka-test-zookeeper-1       | 2022-10-21 22:14:46,957 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44764
+kafka-test-zookeeper-1       | 2022-10-21 22:14:46,962 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44764
+kafka-test-zookeeper-1       | 2022-10-21 22:14:46,964 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a000a with negotiated timeout 30000 for client /172.30.0.2:44764
+kafka-test-zookeeper-1       | 2022-10-21 22:14:47,014 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a000a
+kafka-test-zookeeper-1       | 2022-10-21 22:14:47,018 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44764 which had sessionid 0x100029ee06a000a
+kafka-test-zookeeper-1       | 2022-10-21 22:15:04,181 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44766
+kafka-test-zookeeper-1       | 2022-10-21 22:15:04,186 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44766
+kafka-test-zookeeper-1       | 2022-10-21 22:15:04,188 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a000b with negotiated timeout 30000 for client /172.30.0.2:44766
+kafka-test-zookeeper-1       | 2022-10-21 22:15:04,276 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a000b
+kafka-test-zookeeper-1       | 2022-10-21 22:15:04,279 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44766 which had sessionid 0x100029ee06a000b
+kafka-test-zookeeper-1       | 2022-10-21 22:15:21,465 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44768
+kafka-test-zookeeper-1       | 2022-10-21 22:15:21,469 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44768
+kafka-test-zookeeper-1       | 2022-10-21 22:15:21,472 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a000c with negotiated timeout 30000 for client /172.30.0.2:44768
+kafka-test-zookeeper-1       | 2022-10-21 22:15:21,524 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a000c
+kafka-test-zookeeper-1       | 2022-10-21 22:15:21,527 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44768 which had sessionid 0x100029ee06a000c
+kafka-test-zookeeper-1       | 2022-10-21 22:15:38,719 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44770
+kafka-test-zookeeper-1       | 2022-10-21 22:15:38,723 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44770
+kafka-test-zookeeper-1       | 2022-10-21 22:15:38,726 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a000d with negotiated timeout 30000 for client /172.30.0.2:44770
+kafka-test-zookeeper-1       | 2022-10-21 22:15:38,774 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a000d
+kafka-test-zookeeper-1       | 2022-10-21 22:15:38,776 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44770 which had sessionid 0x100029ee06a000d
+kafka-test-zookeeper-1       | 2022-10-21 22:15:56,143 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44772
+kafka-test-zookeeper-1       | 2022-10-21 22:15:56,147 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44772
+kafka-test-zookeeper-1       | 2022-10-21 22:15:56,154 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a000e with negotiated timeout 30000 for client /172.30.0.2:44772
+kafka-test-zookeeper-1       | 2022-10-21 22:15:56,211 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a000e
+kafka-test-zookeeper-1       | 2022-10-21 22:15:56,220 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44772 which had sessionid 0x100029ee06a000e
+kafka-test-zookeeper-1       | 2022-10-21 22:16:13,345 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44774
+kafka-test-zookeeper-1       | 2022-10-21 22:16:13,349 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44774
+kafka-test-zookeeper-1       | 2022-10-21 22:16:13,352 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a000f with negotiated timeout 30000 for client /172.30.0.2:44774
+kafka-test-zookeeper-1       | 2022-10-21 22:16:13,400 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a000f
+kafka-test-zookeeper-1       | 2022-10-21 22:16:13,402 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44774 which had sessionid 0x100029ee06a000f
+kafka-test-zookeeper-1       | 2022-10-21 22:16:30,698 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44776
+kafka-test-zookeeper-1       | 2022-10-21 22:16:30,703 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44776
+kafka-test-zookeeper-1       | 2022-10-21 22:16:30,717 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0010 with negotiated timeout 30000 for client /172.30.0.2:44776
+kafka-test-zookeeper-1       | 2022-10-21 22:16:30,771 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0010
+kafka-test-zookeeper-1       | 2022-10-21 22:16:30,773 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44776 which had sessionid 0x100029ee06a0010
+kafka-test-zookeeper-1       | 2022-10-21 22:16:47,924 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44782
+kafka-test-zookeeper-1       | 2022-10-21 22:16:47,928 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44782
+kafka-test-zookeeper-1       | 2022-10-21 22:16:47,943 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0011 with negotiated timeout 30000 for client /172.30.0.2:44782
+kafka-test-zookeeper-1       | 2022-10-21 22:16:48,005 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0011
+kafka-test-zookeeper-1       | 2022-10-21 22:16:48,008 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44782 which had sessionid 0x100029ee06a0011
+kafka-test-zookeeper-1       | 2022-10-21 22:17:05,281 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44784
+kafka-test-zookeeper-1       | 2022-10-21 22:17:05,285 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44784
+kafka-test-zookeeper-1       | 2022-10-21 22:17:05,288 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0012 with negotiated timeout 30000 for client /172.30.0.2:44784
+kafka-test-zookeeper-1       | 2022-10-21 22:17:05,343 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0012
+kafka-test-zookeeper-1       | 2022-10-21 22:17:05,345 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44784 which had sessionid 0x100029ee06a0012
+kafka-test-zookeeper-1       | 2022-10-21 22:17:22,617 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44786
+kafka-test-zookeeper-1       | 2022-10-21 22:17:22,622 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44786
+kafka-test-zookeeper-1       | 2022-10-21 22:17:22,624 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0013 with negotiated timeout 30000 for client /172.30.0.2:44786
+kafka-test-zookeeper-1       | 2022-10-21 22:17:22,683 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0013
+kafka-test-zookeeper-1       | 2022-10-21 22:17:22,686 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44786 which had sessionid 0x100029ee06a0013
+kafka-test-zookeeper-1       | 2022-10-21 22:17:40,164 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44788
+kafka-test-zookeeper-1       | 2022-10-21 22:17:40,169 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44788
+kafka-test-zookeeper-1       | 2022-10-21 22:17:40,184 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0014 with negotiated timeout 30000 for client /172.30.0.2:44788
+kafka-test-zookeeper-1       | 2022-10-21 22:17:40,258 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0014
+kafka-test-zookeeper-1       | 2022-10-21 22:17:40,260 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44788 which had sessionid 0x100029ee06a0014
+kafka-test-zookeeper-1       | 2022-10-21 22:17:57,846 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44790
+kafka-test-zookeeper-1       | 2022-10-21 22:17:57,851 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44790
+kafka-test-zookeeper-1       | 2022-10-21 22:17:57,866 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0015 with negotiated timeout 30000 for client /172.30.0.2:44790
+kafka-test-zookeeper-1       | 2022-10-21 22:17:57,936 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0015
+kafka-test-zookeeper-1       | 2022-10-21 22:17:57,939 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44790 which had sessionid 0x100029ee06a0015
+kafka-test-zookeeper-1       | 2022-10-21 22:18:15,344 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44810
+kafka-test-zookeeper-1       | 2022-10-21 22:18:15,348 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44810
+kafka-test-zookeeper-1       | 2022-10-21 22:18:15,350 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0016 with negotiated timeout 30000 for client /172.30.0.2:44810
+kafka-test-zookeeper-1       | 2022-10-21 22:18:15,406 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0016
+kafka-test-zookeeper-1       | 2022-10-21 22:18:15,409 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44810 which had sessionid 0x100029ee06a0016
+kafka-test-zookeeper-1       | 2022-10-21 22:18:32,625 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44820
+kafka-test-zookeeper-1       | 2022-10-21 22:18:32,629 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44820
+kafka-test-zookeeper-1       | 2022-10-21 22:18:32,631 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0017 with negotiated timeout 30000 for client /172.30.0.2:44820
+kafka-test-zookeeper-1       | 2022-10-21 22:18:32,689 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0017
+kafka-test-zookeeper-1       | 2022-10-21 22:18:32,691 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44820 which had sessionid 0x100029ee06a0017
+kafka-test-zookeeper-1       | 2022-10-21 22:18:50,058 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44822
+kafka-test-zookeeper-1       | 2022-10-21 22:18:50,063 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44822
+kafka-test-zookeeper-1       | 2022-10-21 22:18:50,081 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0018 with negotiated timeout 30000 for client /172.30.0.2:44822
+kafka-test-zookeeper-1       | 2022-10-21 22:18:50,151 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0018
+kafka-test-zookeeper-1       | 2022-10-21 22:18:50,153 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44822 which had sessionid 0x100029ee06a0018
+kafka-test-zookeeper-1       | 2022-10-21 22:19:06,747 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0000
+kafka-test-zookeeper-1       | 2022-10-21 22:19:06,753 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44690 which had sessionid 0x100029ee06a0000
+kafka-test-zookeeper-1       | 2022-10-21 22:19:07,557 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44830
+kafka-test-zookeeper-1       | 2022-10-21 22:19:07,562 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44830
+kafka-test-zookeeper-1       | 2022-10-21 22:19:07,574 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0019 with negotiated timeout 30000 for client /172.30.0.2:44830
+kafka-test-zookeeper-1       | 2022-10-21 22:19:07,626 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0019
+kafka-test-zookeeper-1       | 2022-10-21 22:19:07,629 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44830 which had sessionid 0x100029ee06a0019
+kafka-test-zookeeper-1       | 2022-10-21 22:24:26,675 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44836
+kafka-test-zookeeper-1       | 2022-10-21 22:24:26,680 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44836
+kafka-test-zookeeper-1       | 2022-10-21 22:24:26,683 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a001a with negotiated timeout 18000 for client /172.30.0.2:44836
+kafka-test-zookeeper-1       | 2022-10-21 22:24:26,733 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@653] - Got user-level KeeperException when processing sessionid:0x100029ee06a001a type:create cxid:0x1 zxid:0x5b txntype:-1 reqpath:n/a Error Path:/consumers Error:KeeperErrorCode = NodeExists for /consumers
+kafka-test-zookeeper-1       | 2022-10-21 22:24:26,797 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@653] - Got user-level KeeperException when processing sessionid:0x100029ee06a001a type:create cxid:0x2 zxid:0x5c txntype:-1 reqpath:n/a Error Path:/brokers/ids Error:KeeperErrorCode = NodeExists for /brokers/ids
+kafka-test-zookeeper-1       | 2022-10-21 22:24:26,800 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@653] - Got user-level KeeperException when processing sessionid:0x100029ee06a001a type:create cxid:0x3 zxid:0x5d txntype:-1 reqpath:n/a Error Path:/brokers/topics Error:KeeperErrorCode = NodeExists for /brokers/topics
+kafka-test-zookeeper-1       | 2022-10-21 22:24:26,803 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@653] - Got user-level KeeperException when processing sessionid:0x100029ee06a001a type:create cxid:0x4 zxid:0x5e txntype:-1 reqpath:n/a Error Path:/config/changes Error:KeeperErrorCode = NodeExists for /config/changes
+kafka-test-zookeeper-1       | 2022-10-21 22:24:26,806 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@653] - Got user-level KeeperException when processing sessionid:0x100029ee06a001a type:create cxid:0x5 zxid:0x5f txntype:-1 reqpath:n/a Error Path:/admin/delete_topics Error:KeeperErrorCode = NodeExists for /admin/delete_topics
+kafka-test-zookeeper-1       | 2022-10-21 22:24:26,809 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@653] - Got user-level KeeperException when processing sessionid:0x100029ee06a001a type:create cxid:0x6 zxid:0x60 txntype:-1 reqpath:n/a Error Path:/brokers/seqid Error:KeeperErrorCode = NodeExists for /brokers/seqid
+kafka-test-zookeeper-1       | 2022-10-21 22:24:26,812 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@653] - Got user-level KeeperException when processing sessionid:0x100029ee06a001a type:create cxid:0x7 zxid:0x61 txntype:-1 reqpath:n/a Error Path:/isr_change_notification Error:KeeperErrorCode = NodeExists for /isr_change_notification
+kafka-test-zookeeper-1       | 2022-10-21 22:24:26,815 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@653] - Got user-level KeeperException when processing sessionid:0x100029ee06a001a type:create cxid:0x8 zxid:0x62 txntype:-1 reqpath:n/a Error Path:/latest_producer_id_block Error:KeeperErrorCode = NodeExists for /latest_producer_id_block
+kafka-test-zookeeper-1       | 2022-10-21 22:24:26,818 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@653] - Got user-level KeeperException when processing sessionid:0x100029ee06a001a type:create cxid:0x9 zxid:0x63 txntype:-1 reqpath:n/a Error Path:/log_dir_event_notification Error:KeeperErrorCode = NodeExists for /log_dir_event_notification
+kafka-test-zookeeper-1       | 2022-10-21 22:24:26,821 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@653] - Got user-level KeeperException when processing sessionid:0x100029ee06a001a type:create cxid:0xa zxid:0x64 txntype:-1 reqpath:n/a Error Path:/config/topics Error:KeeperErrorCode = NodeExists for /config/topics
+kafka-test-zookeeper-1       | 2022-10-21 22:24:26,824 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@653] - Got user-level KeeperException when processing sessionid:0x100029ee06a001a type:create cxid:0xb zxid:0x65 txntype:-1 reqpath:n/a Error Path:/config/clients Error:KeeperErrorCode = NodeExists for /config/clients
+kafka-test-zookeeper-1       | 2022-10-21 22:24:26,827 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@653] - Got user-level KeeperException when processing sessionid:0x100029ee06a001a type:create cxid:0xc zxid:0x66 txntype:-1 reqpath:n/a Error Path:/config/users Error:KeeperErrorCode = NodeExists for /config/users
+kafka-test-zookeeper-1       | 2022-10-21 22:24:26,830 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@653] - Got user-level KeeperException when processing sessionid:0x100029ee06a001a type:create cxid:0xd zxid:0x67 txntype:-1 reqpath:n/a Error Path:/config/brokers Error:KeeperErrorCode = NodeExists for /config/brokers
+kafka-test-zookeeper-1       | 2022-10-21 22:24:26,833 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@653] - Got user-level KeeperException when processing sessionid:0x100029ee06a001a type:create cxid:0xe zxid:0x68 txntype:-1 reqpath:n/a Error Path:/config/ips Error:KeeperErrorCode = NodeExists for /config/ips
+kafka-test-zookeeper-1       | 2022-10-21 22:24:28,960 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@596] - Got user-level KeeperException when processing sessionid:0x100029ee06a001a type:multi cxid:0x3b zxid:0x6e txntype:-1 reqpath:n/a aborting remaining multi ops. Error Path:/admin/preferred_replica_election Error:KeeperErrorCode = NoNode for /admin/preferred_replica_election
+kafka-test-zookeeper-1       | 2022-10-21 22:24:35,813 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44840
+kafka-test-zookeeper-1       | 2022-10-21 22:24:35,817 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44840
+kafka-test-zookeeper-1       | 2022-10-21 22:24:35,821 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a001b with negotiated timeout 30000 for client /172.30.0.2:44840
+kafka-test-zookeeper-1       | 2022-10-21 22:24:36,117 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a001b
+kafka-test-zookeeper-1       | 2022-10-21 22:24:36,121 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44840 which had sessionid 0x100029ee06a001b
+kafka-test-zookeeper-1       | 2022-10-21 22:24:41,149 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44842
+kafka-test-zookeeper-1       | 2022-10-21 22:24:41,153 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44842
+kafka-test-zookeeper-1       | 2022-10-21 22:24:41,157 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a001c with negotiated timeout 30000 for client /172.30.0.2:44842
+kafka-test-zookeeper-1       | 2022-10-21 22:24:41,205 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a001c
+kafka-test-zookeeper-1       | 2022-10-21 22:24:41,207 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44842 which had sessionid 0x100029ee06a001c
+kafka-test-zookeeper-1       | 2022-10-21 22:24:58,552 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44846
+kafka-test-zookeeper-1       | 2022-10-21 22:24:58,556 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44846
+kafka-test-zookeeper-1       | 2022-10-21 22:24:58,564 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a001d with negotiated timeout 30000 for client /172.30.0.2:44846
+kafka-test-zookeeper-1       | 2022-10-21 22:24:58,613 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a001d
+kafka-test-zookeeper-1       | 2022-10-21 22:24:58,616 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44846 which had sessionid 0x100029ee06a001d
+kafka-test-zookeeper-1       | 2022-10-21 22:25:16,544 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44848
+kafka-test-zookeeper-1       | 2022-10-21 22:25:16,568 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44848
+kafka-test-zookeeper-1       | 2022-10-21 22:25:16,578 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a001e with negotiated timeout 30000 for client /172.30.0.2:44848
+kafka-test-zookeeper-1       | 2022-10-21 22:25:16,713 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a001e
+kafka-test-zookeeper-1       | 2022-10-21 22:25:16,720 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44848 which had sessionid 0x100029ee06a001e
+kafka-test-zookeeper-1       | 2022-10-21 22:25:33,882 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44850
+kafka-test-zookeeper-1       | 2022-10-21 22:25:33,886 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44850
+kafka-test-zookeeper-1       | 2022-10-21 22:25:33,891 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a001f with negotiated timeout 30000 for client /172.30.0.2:44850
+kafka-test-zookeeper-1       | 2022-10-21 22:25:33,939 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a001f
+kafka-test-zookeeper-1       | 2022-10-21 22:25:33,941 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44850 which had sessionid 0x100029ee06a001f
+kafka-test-zookeeper-1       | 2022-10-21 22:25:51,172 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44852
+kafka-test-zookeeper-1       | 2022-10-21 22:25:51,177 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44852
+kafka-test-zookeeper-1       | 2022-10-21 22:25:51,188 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0020 with negotiated timeout 30000 for client /172.30.0.2:44852
+kafka-test-zookeeper-1       | 2022-10-21 22:25:51,243 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0020
+kafka-test-zookeeper-1       | 2022-10-21 22:25:51,245 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44852 which had sessionid 0x100029ee06a0020
+kafka-test-zookeeper-1       | 2022-10-21 22:26:08,523 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44854
+kafka-test-zookeeper-1       | 2022-10-21 22:26:08,528 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44854
+kafka-test-zookeeper-1       | 2022-10-21 22:26:08,548 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0021 with negotiated timeout 30000 for client /172.30.0.2:44854
+kafka-test-zookeeper-1       | 2022-10-21 22:26:08,603 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0021
+kafka-test-zookeeper-1       | 2022-10-21 22:26:08,606 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44854 which had sessionid 0x100029ee06a0021
+kafka-test-zookeeper-1       | 2022-10-21 22:26:26,007 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44856
+kafka-test-zookeeper-1       | 2022-10-21 22:26:26,012 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44856
+kafka-test-zookeeper-1       | 2022-10-21 22:26:26,031 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0022 with negotiated timeout 30000 for client /172.30.0.2:44856
+kafka-test-zookeeper-1       | 2022-10-21 22:26:26,085 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0022
+kafka-test-zookeeper-1       | 2022-10-21 22:26:26,089 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44856 which had sessionid 0x100029ee06a0022
+kafka-test-zookeeper-1       | 2022-10-21 22:26:43,265 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44858
+kafka-test-zookeeper-1       | 2022-10-21 22:26:43,269 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44858
+kafka-test-zookeeper-1       | 2022-10-21 22:26:43,275 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0023 with negotiated timeout 30000 for client /172.30.0.2:44858
+kafka-test-zookeeper-1       | 2022-10-21 22:26:43,323 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0023
+kafka-test-zookeeper-1       | 2022-10-21 22:26:43,326 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44858 which had sessionid 0x100029ee06a0023
+kafka-test-zookeeper-1       | 2022-10-21 22:27:00,713 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44860
+kafka-test-zookeeper-1       | 2022-10-21 22:27:00,719 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44860
+kafka-test-zookeeper-1       | 2022-10-21 22:27:00,726 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0024 with negotiated timeout 30000 for client /172.30.0.2:44860
+kafka-test-zookeeper-1       | 2022-10-21 22:27:00,780 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0024
+kafka-test-zookeeper-1       | 2022-10-21 22:27:00,783 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44860 which had sessionid 0x100029ee06a0024
+kafka-test-zookeeper-1       | 2022-10-21 22:27:18,057 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44862
+kafka-test-zookeeper-1       | 2022-10-21 22:27:18,062 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44862
+kafka-test-zookeeper-1       | 2022-10-21 22:27:18,086 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0025 with negotiated timeout 30000 for client /172.30.0.2:44862
+kafka-test-zookeeper-1       | 2022-10-21 22:27:18,145 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0025
+kafka-test-zookeeper-1       | 2022-10-21 22:27:18,148 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44862 which had sessionid 0x100029ee06a0025
+kafka-test-zookeeper-1       | 2022-10-21 22:27:36,196 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44864
+kafka-test-zookeeper-1       | 2022-10-21 22:27:36,202 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44864
+kafka-test-zookeeper-1       | 2022-10-21 22:27:36,221 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0026 with negotiated timeout 30000 for client /172.30.0.2:44864
+kafka-test-zookeeper-1       | 2022-10-21 22:27:36,306 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0026
+kafka-test-zookeeper-1       | 2022-10-21 22:27:36,313 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44864 which had sessionid 0x100029ee06a0026
+kafka-test-zookeeper-1       | 2022-10-21 22:27:53,982 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44866
+kafka-test-zookeeper-1       | 2022-10-21 22:27:53,986 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44866
+kafka-test-zookeeper-1       | 2022-10-21 22:27:53,992 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0027 with negotiated timeout 30000 for client /172.30.0.2:44866
+kafka-test-zookeeper-1       | 2022-10-21 22:27:54,039 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0027
+kafka-test-zookeeper-1       | 2022-10-21 22:27:54,042 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44866 which had sessionid 0x100029ee06a0027
+kafka-test-zookeeper-1       | 2022-10-21 22:28:11,696 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44868
+kafka-test-zookeeper-1       | 2022-10-21 22:28:11,700 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44868
+kafka-test-zookeeper-1       | 2022-10-21 22:28:11,718 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0028 with negotiated timeout 30000 for client /172.30.0.2:44868
+kafka-test-zookeeper-1       | 2022-10-21 22:28:11,773 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0028
+kafka-test-zookeeper-1       | 2022-10-21 22:28:11,775 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44868 which had sessionid 0x100029ee06a0028
+kafka-test-zookeeper-1       | 2022-10-21 22:28:29,474 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44870
+kafka-test-zookeeper-1       | 2022-10-21 22:28:29,478 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44870
+kafka-test-zookeeper-1       | 2022-10-21 22:28:29,483 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0029 with negotiated timeout 30000 for client /172.30.0.2:44870
+kafka-test-zookeeper-1       | 2022-10-21 22:28:29,535 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0029
+kafka-test-zookeeper-1       | 2022-10-21 22:28:29,538 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44870 which had sessionid 0x100029ee06a0029
+kafka-test-zookeeper-1       | 2022-10-21 22:28:47,097 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44872
+kafka-test-zookeeper-1       | 2022-10-21 22:28:47,104 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44872
+kafka-test-zookeeper-1       | 2022-10-21 22:28:47,143 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a002a with negotiated timeout 30000 for client /172.30.0.2:44872
+kafka-test-zookeeper-1       | 2022-10-21 22:28:47,226 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a002a
+kafka-test-zookeeper-1       | 2022-10-21 22:28:47,228 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44872 which had sessionid 0x100029ee06a002a
+kafka-test-zookeeper-1       | 2022-10-21 22:29:04,788 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44874
+kafka-test-zookeeper-1       | 2022-10-21 22:29:04,792 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44874
+kafka-test-zookeeper-1       | 2022-10-21 22:29:04,796 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a002b with negotiated timeout 30000 for client /172.30.0.2:44874
+kafka-test-zookeeper-1       | 2022-10-21 22:29:04,848 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a002b
+kafka-test-zookeeper-1       | 2022-10-21 22:29:04,851 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44874 which had sessionid 0x100029ee06a002b
+kafka-test-zookeeper-1       | 2022-10-21 22:29:22,145 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44876
+kafka-test-zookeeper-1       | 2022-10-21 22:29:22,148 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44876
+kafka-test-zookeeper-1       | 2022-10-21 22:29:22,152 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a002c with negotiated timeout 30000 for client /172.30.0.2:44876
+kafka-test-zookeeper-1       | 2022-10-21 22:29:22,208 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a002c
+kafka-test-zookeeper-1       | 2022-10-21 22:29:22,210 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44876 which had sessionid 0x100029ee06a002c
+kafka-test-zookeeper-1       | 2022-10-21 22:29:39,542 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44878
+kafka-test-zookeeper-1       | 2022-10-21 22:29:39,547 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44878
+kafka-test-zookeeper-1       | 2022-10-21 22:29:39,552 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a002d with negotiated timeout 30000 for client /172.30.0.2:44878
+kafka-test-zookeeper-1       | 2022-10-21 22:29:39,609 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a002d
+kafka-test-zookeeper-1       | 2022-10-21 22:29:39,613 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44878 which had sessionid 0x100029ee06a002d
+kafka-test-zookeeper-1       | 2022-10-21 22:29:56,937 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44880
+kafka-test-zookeeper-1       | 2022-10-21 22:29:56,942 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44880
+kafka-test-zookeeper-1       | 2022-10-21 22:29:56,961 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a002e with negotiated timeout 30000 for client /172.30.0.2:44880
+kafka-test-zookeeper-1       | 2022-10-21 22:29:57,016 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a002e
+kafka-test-zookeeper-1       | 2022-10-21 22:29:57,019 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44880 which had sessionid 0x100029ee06a002e
+kafka-test-zookeeper-1       | 2022-10-21 22:30:14,293 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44882
+kafka-test-zookeeper-1       | 2022-10-21 22:30:14,299 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44882
+kafka-test-zookeeper-1       | 2022-10-21 22:30:14,315 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a002f with negotiated timeout 30000 for client /172.30.0.2:44882
+kafka-test-zookeeper-1       | 2022-10-21 22:30:14,421 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a002f
+kafka-test-zookeeper-1       | 2022-10-21 22:30:14,424 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44882 which had sessionid 0x100029ee06a002f
+kafka-test-zookeeper-1       | 2022-10-21 22:30:31,689 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44884
+kafka-test-zookeeper-1       | 2022-10-21 22:30:31,694 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44884
+kafka-test-zookeeper-1       | 2022-10-21 22:30:31,704 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0030 with negotiated timeout 30000 for client /172.30.0.2:44884
+kafka-test-zookeeper-1       | 2022-10-21 22:30:31,755 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0030
+kafka-test-zookeeper-1       | 2022-10-21 22:30:31,758 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44884 which had sessionid 0x100029ee06a0030
+kafka-test-zookeeper-1       | 2022-10-21 22:30:48,982 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44886
+kafka-test-zookeeper-1       | 2022-10-21 22:30:48,986 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44886
+kafka-test-zookeeper-1       | 2022-10-21 22:30:48,990 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0031 with negotiated timeout 30000 for client /172.30.0.2:44886
+kafka-test-zookeeper-1       | 2022-10-21 22:30:49,045 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0031
+kafka-test-zookeeper-1       | 2022-10-21 22:30:49,047 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44886 which had sessionid 0x100029ee06a0031
+kafka-test-zookeeper-1       | 2022-10-21 22:31:06,587 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44888
+kafka-test-zookeeper-1       | 2022-10-21 22:31:06,592 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44888
+kafka-test-zookeeper-1       | 2022-10-21 22:31:06,599 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0032 with negotiated timeout 30000 for client /172.30.0.2:44888
+kafka-test-zookeeper-1       | 2022-10-21 22:31:06,661 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0032
+kafka-test-zookeeper-1       | 2022-10-21 22:31:06,663 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44888 which had sessionid 0x100029ee06a0032
+kafka-test-zookeeper-1       | 2022-10-21 22:31:24,130 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44890
+kafka-test-zookeeper-1       | 2022-10-21 22:31:24,136 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44890
+kafka-test-zookeeper-1       | 2022-10-21 22:31:24,149 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0033 with negotiated timeout 30000 for client /172.30.0.2:44890
+kafka-test-zookeeper-1       | 2022-10-21 22:31:24,240 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0033
+kafka-test-zookeeper-1       | 2022-10-21 22:31:24,243 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44890 which had sessionid 0x100029ee06a0033
+kafka-test-zookeeper-1       | 2022-10-21 22:31:41,866 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44892
+kafka-test-zookeeper-1       | 2022-10-21 22:31:41,870 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44892
+kafka-test-zookeeper-1       | 2022-10-21 22:31:41,890 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0034 with negotiated timeout 30000 for client /172.30.0.2:44892
+kafka-test-zookeeper-1       | 2022-10-21 22:31:41,949 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0034
+kafka-test-zookeeper-1       | 2022-10-21 22:31:41,952 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44892 which had sessionid 0x100029ee06a0034
+kafka-test-zookeeper-1       | 2022-10-21 22:31:59,218 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44894
+kafka-test-zookeeper-1       | 2022-10-21 22:31:59,226 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44894
+kafka-test-zookeeper-1       | 2022-10-21 22:31:59,233 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0035 with negotiated timeout 30000 for client /172.30.0.2:44894
+kafka-test-zookeeper-1       | 2022-10-21 22:31:59,330 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0035
+kafka-test-zookeeper-1       | 2022-10-21 22:31:59,333 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44894 which had sessionid 0x100029ee06a0035
+kafka-test-zookeeper-1       | 2022-10-21 22:32:16,946 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44896
+kafka-test-zookeeper-1       | 2022-10-21 22:32:16,955 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44896
+kafka-test-zookeeper-1       | 2022-10-21 22:32:16,961 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0036 with negotiated timeout 30000 for client /172.30.0.2:44896
+kafka-test-zookeeper-1       | 2022-10-21 22:32:17,051 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0036
+kafka-test-zookeeper-1       | 2022-10-21 22:32:17,058 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44896 which had sessionid 0x100029ee06a0036
+kafka-test-zookeeper-1       | 2022-10-21 22:32:34,738 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44898
+kafka-test-zookeeper-1       | 2022-10-21 22:32:34,756 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44898
+kafka-test-zookeeper-1       | 2022-10-21 22:32:34,761 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0037 with negotiated timeout 30000 for client /172.30.0.2:44898
+kafka-test-zookeeper-1       | 2022-10-21 22:32:34,882 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0037
+kafka-test-zookeeper-1       | 2022-10-21 22:32:34,885 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44898 which had sessionid 0x100029ee06a0037
+kafka-test-zookeeper-1       | 2022-10-21 22:32:52,795 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44900
+kafka-test-zookeeper-1       | 2022-10-21 22:32:52,801 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44900
+kafka-test-zookeeper-1       | 2022-10-21 22:32:52,808 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0038 with negotiated timeout 30000 for client /172.30.0.2:44900
+kafka-test-zookeeper-1       | 2022-10-21 22:32:52,861 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0038
+kafka-test-zookeeper-1       | 2022-10-21 22:32:52,864 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44900 which had sessionid 0x100029ee06a0038
+kafka-test-zookeeper-1       | 2022-10-21 22:33:11,025 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44902
+kafka-test-zookeeper-1       | 2022-10-21 22:33:11,030 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44902
+kafka-test-zookeeper-1       | 2022-10-21 22:33:11,034 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0039 with negotiated timeout 30000 for client /172.30.0.2:44902
+kafka-test-zookeeper-1       | 2022-10-21 22:33:11,090 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0039
+kafka-test-zookeeper-1       | 2022-10-21 22:33:11,092 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44902 which had sessionid 0x100029ee06a0039
+kafka-test-zookeeper-1       | 2022-10-21 22:33:28,755 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44904
+kafka-test-zookeeper-1       | 2022-10-21 22:33:28,759 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44904
+kafka-test-zookeeper-1       | 2022-10-21 22:33:28,766 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a003a with negotiated timeout 30000 for client /172.30.0.2:44904
+kafka-test-zookeeper-1       | 2022-10-21 22:33:28,817 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a003a
+kafka-test-zookeeper-1       | 2022-10-21 22:33:28,820 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44904 which had sessionid 0x100029ee06a003a
+kafka-test-zookeeper-1       | 2022-10-21 22:33:47,140 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44912
+kafka-test-zookeeper-1       | 2022-10-21 22:33:47,146 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44912
+kafka-test-zookeeper-1       | 2022-10-21 22:33:47,153 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a003b with negotiated timeout 30000 for client /172.30.0.2:44912
+kafka-test-zookeeper-1       | 2022-10-21 22:33:47,216 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a003b
+kafka-test-zookeeper-1       | 2022-10-21 22:33:47,218 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44912 which had sessionid 0x100029ee06a003b
+kafka-test-zookeeper-1       | 2022-10-21 22:34:08,666 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44914
+kafka-test-zookeeper-1       | 2022-10-21 22:34:08,675 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44914
+kafka-test-zookeeper-1       | 2022-10-21 22:34:08,693 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a003c with negotiated timeout 30000 for client /172.30.0.2:44914
+kafka-test-zookeeper-1       | 2022-10-21 22:34:08,846 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a003c
+kafka-test-zookeeper-1       | 2022-10-21 22:34:08,856 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44914 which had sessionid 0x100029ee06a003c
+kafka-test-zookeeper-1       | 2022-10-21 22:34:26,580 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44916
+kafka-test-zookeeper-1       | 2022-10-21 22:34:26,584 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44916
+kafka-test-zookeeper-1       | 2022-10-21 22:34:26,591 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a003d with negotiated timeout 30000 for client /172.30.0.2:44916
+kafka-test-zookeeper-1       | 2022-10-21 22:34:26,649 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a003d
+kafka-test-zookeeper-1       | 2022-10-21 22:34:26,651 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44916 which had sessionid 0x100029ee06a003d
+kafka-test-zookeeper-1       | 2022-10-21 22:34:44,658 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44918
+kafka-test-zookeeper-1       | 2022-10-21 22:34:44,665 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44918
+kafka-test-zookeeper-1       | 2022-10-21 22:34:44,672 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a003e with negotiated timeout 30000 for client /172.30.0.2:44918
+kafka-test-zookeeper-1       | 2022-10-21 22:34:44,734 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a003e
+kafka-test-zookeeper-1       | 2022-10-21 22:34:44,742 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@376] - Unable to read additional data from client sessionid 0x100029ee06a003e, likely client has closed socket
+kafka-test-zookeeper-1       | 2022-10-21 22:34:44,743 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44918 which had sessionid 0x100029ee06a003e
+kafka-test-zookeeper-1       | 2022-10-21 22:35:02,746 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44920
+kafka-test-zookeeper-1       | 2022-10-21 22:35:02,754 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44920
+kafka-test-zookeeper-1       | 2022-10-21 22:35:02,760 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a003f with negotiated timeout 30000 for client /172.30.0.2:44920
+kafka-test-zookeeper-1       | 2022-10-21 22:35:02,831 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a003f
+kafka-test-zookeeper-1       | 2022-10-21 22:35:02,834 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44920 which had sessionid 0x100029ee06a003f
+kafka-test-zookeeper-1       | 2022-10-21 22:35:21,247 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44922
+kafka-test-zookeeper-1       | 2022-10-21 22:35:21,252 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44922
+kafka-test-zookeeper-1       | 2022-10-21 22:35:21,257 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0040 with negotiated timeout 30000 for client /172.30.0.2:44922
+kafka-test-zookeeper-1       | 2022-10-21 22:35:21,320 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0040
+kafka-test-zookeeper-1       | 2022-10-21 22:35:21,326 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@376] - Unable to read additional data from client sessionid 0x100029ee06a0040, likely client has closed socket
+kafka-test-zookeeper-1       | 2022-10-21 22:35:21,327 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44922 which had sessionid 0x100029ee06a0040
+kafka-test-zookeeper-1       | 2022-10-21 22:35:39,267 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44924
+kafka-test-zookeeper-1       | 2022-10-21 22:35:39,278 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44924
+kafka-test-zookeeper-1       | 2022-10-21 22:35:39,286 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0041 with negotiated timeout 30000 for client /172.30.0.2:44924
+kafka-test-zookeeper-1       | 2022-10-21 22:35:39,393 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0041
+kafka-test-zookeeper-1       | 2022-10-21 22:35:39,396 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44924 which had sessionid 0x100029ee06a0041
+kafka-test-zookeeper-1       | 2022-10-21 22:35:57,184 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44926
+kafka-test-zookeeper-1       | 2022-10-21 22:35:57,188 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44926
+kafka-test-zookeeper-1       | 2022-10-21 22:35:57,192 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0042 with negotiated timeout 30000 for client /172.30.0.2:44926
+kafka-test-zookeeper-1       | 2022-10-21 22:35:57,242 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0042
+kafka-test-zookeeper-1       | 2022-10-21 22:35:57,244 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44926 which had sessionid 0x100029ee06a0042
+kafka-test-zookeeper-1       | 2022-10-21 22:36:15,170 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /172.30.0.2:44928
+kafka-test-zookeeper-1       | 2022-10-21 22:36:15,174 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@949] - Client attempting to establish new session at /172.30.0.2:44928
+kafka-test-zookeeper-1       | 2022-10-21 22:36:15,185 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100029ee06a0043 with negotiated timeout 30000 for client /172.30.0.2:44928
+kafka-test-zookeeper-1       | 2022-10-21 22:36:15,234 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100029ee06a0043
+kafka-test-zookeeper-1       | 2022-10-21 22:36:15,237 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1056] - Closed socket connection for client /172.30.0.2:44928 which had sessionid 0x100029ee06a0043
