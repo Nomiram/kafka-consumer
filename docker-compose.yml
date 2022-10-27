@@ -27,8 +27,8 @@ services:
       timeout: 10s
       retries: 5  
 
-  kafka-consumer:
-    build: ./kafka-consumer
+  kafka-go:
+    build: ./kafka-go
     depends_on:
       kafka: 
         condition: service_healthy

@@ -26,6 +26,7 @@ func Consumer(s chan struct{}) {
 	batch := conn.ReadBatch(10e3, 1e6) // fetch 10KB min, 1MB max
 
 	b := make([]byte, 10e3) // 10KB max per message
+	// i:=0
 	for {
 		n, _ := batch.Read(b)
 		//if err != nil {
@@ -34,6 +35,8 @@ func Consumer(s chan struct{}) {
 		if string(b[:n]) != "" {
 			fmt.Println(string(b[:n]))
 			break
+			// if i >= 3 {break} 
+			// else {i=i+3}
 		}
 	}
 
