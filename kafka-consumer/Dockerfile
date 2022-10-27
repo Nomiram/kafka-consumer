@@ -21,10 +21,10 @@ RUN apk update && apk add --no-cache libc6-compat &&\
 ln -s /lib/libc.musl-x86_64.so.1 /lib/ld-linux-x86-64.so.2
 # RUN apk add ld-linux-x86-64
 # WORKDIR /root/
-RUN addgroup -S app && adduser -S app -G app
-COPY --from=builder --chown=app /app /app
+# RUN addgroup -S app && adduser -S app -G app
+# COPY --from=builder --chown=app /app /app
+COPY --from=builder /app /app
 RUN chmod +x /app/*
-USER app
 RUN ls -al /app/bin/
 
 CMD [ "/app/bin/bin/kafka-consumer" ]

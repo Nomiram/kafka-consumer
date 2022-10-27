@@ -5,13 +5,10 @@ import (
 	"fmt"
 	"log"
 	"time"
-
 	"github.com/segmentio/kafka-go"
 )
 
-var Cons = make(chan struct{})
-
-func Consumer() {
+func Consumer(s chan struct{}) {
 	fmt.Println("msg from Consumer")
 
 	// to consume messages
@@ -20,20 +17,24 @@ func Consumer() {
 
 	conn, err := kafka.DialLeader(context.Background(), "tcp", "kafka:9092", topic, partition)
 	if err != nil {
-		// Cons <- struct{}{}
+		//
 		log.Fatal("Comsumer: failed to dial leader:", err)
 	}
 
+	s <- struct{}{}
 	conn.SetReadDeadline(time.Now().Add(10 * time.Second))
 	batch := conn.ReadBatch(10e3, 1e6) // fetch 10KB min, 1MB max
 
 	b := make([]byte, 10e3) // 10KB max per message
 	for {
-		n, err := batch.Read(b)
-		if err != nil {
+		n, _ := batch.Read(b)
+		//if err != nil {
+		//	break
+		//}
+		if string(b[:n]) != "" {
+			fmt.Println(string(b[:n]))
 			break
 		}
-		fmt.Println(string(b[:n]))
 	}
 
 	if err := batch.Close(); err != nil {
