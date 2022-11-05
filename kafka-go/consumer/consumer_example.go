@@ -5,49 +5,46 @@ import (
 	"fmt"
 	"log"
 	"time"
+
 	"github.com/segmentio/kafka-go"
 )
 
-func Consumer(s chan struct{}) {
+func KafkaConsumer() *kafka.Conn {
 	fmt.Println("msg from Consumer")
 
 	// to consume messages
 	topic := "my-topic-1"
 	partition := 0
 
+	// time.Sleep(time.Second * 5)
 	conn, err := kafka.DialLeader(context.Background(), "tcp", "kafka:9092", topic, partition)
 	if err != nil {
 		//
 		log.Fatal("Comsumer: failed to dial leader:", err)
+		time.Sleep(time.Second * 2)
 	}
 
-	s <- struct{}{}
-	conn.SetReadDeadline(time.Now().Add(10 * time.Second))
-	batch := conn.ReadBatch(10e3, 1e6) // fetch 10KB min, 1MB max
+	// conn.SetReadDeadline(0)
 
-	b := make([]byte, 10e3) // 10KB max per message
-	// i:=0
+	// if err := conn.Close(); err != nil {
+	// 	log.Fatal("failed to close connection:", err)
+	// }
+	return conn
+
+}
+func KafkaRead(conn *kafka.Conn) (key string, value string) {
+	var n kafka.Message
+	var err error
 	for {
-		n, _ := batch.Read(b)
-		//if err != nil {
-		//	break
-		//}
-		if string(b[:n]) != "" {
-			fmt.Println(string(b[:n]))
+		n, err = conn.ReadMessage(100000)
+		if err != nil {
+			fmt.Println("err: ", err.Error())
+		}
+		time.Sleep(time.Millisecond * 100)
+
+		if string(n.Key) != "" {
 			break
-			// if i >= 3 {break} 
-			// else {i=i+3}
 		}
 	}
-
-	if err := batch.Close(); err != nil {
-		// Cons <- struct{}{}
-		log.Fatal("failed to close batch:", err)
-	}
-
-	if err := conn.Close(); err != nil {
-		// Cons <- struct{}{}
-		log.Fatal("failed to close connection:", err)
-	}
-
+	return string(n.Key), string(n.Value)
 }
